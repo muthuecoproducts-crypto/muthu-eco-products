@@ -10,8 +10,10 @@ const PORT = process.env.PORT || 5001
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://muthu-eco-products.vercel.app'],
-  credentials: true
+  origin: ['http://localhost:5173', 'https://muthu-eco-products.vercel.app', 'https://muthu-eco-products-*.vercel.app'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }))
 app.use(express.json())
 
