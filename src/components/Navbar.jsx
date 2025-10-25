@@ -10,9 +10,11 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             {/* Enhanced Logo */}
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#16a093] to-[#117964] rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <span className="text-white font-bold text-xl">M</span>
-              </div>
+              <img 
+                src="/public/images/MEP logo.png" 
+                alt="MEP Logo" 
+                className="w-12 h-12 object-contain group-hover:scale-105 transition-all duration-300"
+              />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-bold text-gray-800">
                   Muthu Eco Products
