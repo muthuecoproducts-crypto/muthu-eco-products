@@ -173,18 +173,26 @@ const Home = () => {
                   alt={product.title}
                   className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center">
-                  <div className="text-center text-white p-8 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center">
+                  <div className="text-center text-white p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="text-3xl font-bold mb-3">{product.title}</h3>
                     <p className="mb-6 text-lg">{product.description}</p>
                     <Link 
                       to="/products" 
-                      className="bg-white text-primary px-6 py-3 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold uppercase tracking-wide"
+                      className="inline-block bg-white text-[#16a093] px-8 py-3 rounded-full hover:bg-[#16a093] hover:text-white transition-all duration-300 font-semibold uppercase tracking-wide shadow-lg"
                     >
                       Explore
                     </Link>
                   </div>
                 </div>
+                {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                  <Link 
+                    to="/products" 
+                    className="bg-white/90 text-[#16a093] px-6 py-2 rounded-full hover:bg-[#16a093] hover:text-white transition-all duration-300 font-semibold text-sm shadow-lg backdrop-blur-sm"
+                  >
+                    View Products
+                  </Link>
+                </div> */}
               </div>
             ))}
           </div>
