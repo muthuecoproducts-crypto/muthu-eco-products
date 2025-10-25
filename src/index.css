@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,5 +8,71 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Inter", "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Professional Button Styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-[#16a093] to-[#117964] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
+}
+
+.btn-secondary {
+  @apply bg-white text-[#16a093] border-2 border-[#16a093] px-8 py-3 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:bg-[#16a093] hover:text-white hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
+}
+
+/* Professional Card Styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden;
+}
+
+.card-hover {
+  @apply transform hover:-translate-y-2 transition-all duration-300;
+}
+
+/* Professional Section Styles */
+.section-padding {
+  @apply py-20;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight;
+}
+
+.section-subtitle {
+  @apply text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed;
+}
+
+/* Professional Gradient Backgrounds */
+.gradient-bg {
+  @apply bg-gradient-to-br from-gray-50 to-gray-100;
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(22, 160, 147, 0.9) 0%,
+    rgba(17, 121, 100, 0.9) 100%
+  );
+}
+
+/* Professional Text Styles */
+.text-professional {
+  @apply text-gray-700 leading-relaxed;
+}
+
+/* Enhanced Hover Effects */
+.hover-lift {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* Professional Spacing */
+.content-spacing {
+  @apply space-y-6;
+}
+
+/* Enhanced Focus States */
+.focus-ring {
+  @apply focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
 }
