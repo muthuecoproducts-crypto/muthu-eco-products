@@ -11,6 +11,7 @@ body {
   font-family: "Inter", "Poppins", sans-serif;
   line-height: 1.6;
   color: #1f2937;
+  padding-top: 80px; /* Account for fixed header height */
 }
 
 /* Professional Button Styles */
@@ -75,4 +76,38 @@ body {
 /* Enhanced Focus States */
 .focus-ring {
   @apply focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
+}
+
+/* Professional Header Styles */
+.header-offset {
+  @apply pt-32;
+}
+
+.top-bar {
+  @apply bg-gradient-to-r from-[#16a093] to-[#117964] text-white;
+}
+
+.navbar-glass {
+  @apply bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100;
+}
+
+.logo-icon {
+  @apply w-12 h-12 bg-gradient-to-br from-[#16a093] to-[#117964] rounded-xl flex items-center justify-center shadow-lg transition-all duration-300;
+}
+
+.logo-icon:hover {
+  @apply shadow-xl scale-105;
+}
+
+.nav-link {
+  @apply text-gray-700 hover:text-[#16a093] font-semibold transition-all duration-300 relative py-2;
+}
+
+.nav-link::after {
+  @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-[#16a093] transition-all duration-300;
+  content: '';
+}
+
+.nav-link:hover::after {
+  @apply w-full;
 }
