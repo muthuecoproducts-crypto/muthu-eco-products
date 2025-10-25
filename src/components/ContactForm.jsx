@@ -23,7 +23,8 @@ const ContactForm = () => {
 
     try {
       const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
-      const response = await fetch(`${apiUrl}/api/contact`, {
+      
+      const response = await fetch(`${apiUrl}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -99,6 +100,12 @@ const ContactForm = () => {
         {submitStatus === 'error' && (
           <div className="text-red-600 text-sm mt-2">
             ✗ Failed to send message. Please try again or contact us directly.
+          </div>
+        )}
+        
+        {submitStatus === 'timeout' && (
+          <div className="text-orange-600 text-sm mt-2">
+            ⚠ Request timed out. Please try again or contact us via WhatsApp.
           </div>
         )}
       </form>

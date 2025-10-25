@@ -2,22 +2,22 @@ const About = () => {
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">🍃 About Us</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+      <section className="py-12 sm:py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">🍃 About Us</h1>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Welcome to Muthu Organic Shop, your neighborhood destination for fresh, farm-grown, and fully organic essentials.
           </p>
         </div>
       </section>
 
       {/* Brand Story */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Welcome to Muthu Organic Shop</h2>
-              <div className="space-y-4 text-gray-600">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">Welcome to Muthu Organic Shop</h2>
+              <div className="space-y-3 sm:space-y-4 text-gray-600 text-sm sm:text-base">
                 <p>
                   We believe that நல் உணவே அரும ருந்து — healthy food is truly the best medicine.
                 </p>
@@ -36,7 +36,7 @@ const About = () => {
               <img 
                 src="/images/home.png" 
                 alt="Our Story" 
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
+                className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -44,22 +44,22 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className="text-center">
-              <div className="text-5xl mb-6">🎯</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">🎯</div>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Mission</h3>
+              <p className="text-gray-600 text-sm sm:text-base px-2">
                 To provide pure, organic food products that promote healthy living while supporting 
                 sustainable farming practices. We aim to bridge the gap between conscious consumers 
                 and responsible farmers, ensuring quality and authenticity in every product.
               </p>
             </div>
             <div className="text-center">
-              <div className="text-5xl mb-6">👁️</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
-              <p className="text-gray-600">
+              <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">👁️</div>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Vision</h3>
+              <p className="text-gray-600 text-sm sm:text-base px-2">
                 To become the most trusted name in organic food products, creating a healthier world 
                 where organic living is accessible to all. We envision a future where every meal 
                 contributes to personal health and environmental well-being.

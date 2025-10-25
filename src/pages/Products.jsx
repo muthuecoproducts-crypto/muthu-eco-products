@@ -56,10 +56,10 @@ const Products = () => {
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">🌻 Our Product Range & Benefits</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+      <section className="py-12 sm:py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">🌻 Our Product Range & Benefits</h1>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
             Even though we're a humble store, our shelves are full of nature's treasures. Here's a glimpse of what we bring to your table — and why they're amazing for your health!
           </p>
           <button

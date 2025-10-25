@@ -11,7 +11,7 @@ const Navbar = () => {
             {/* Enhanced Logo */}
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
-                src="/mep logo.png" 
+                src="/images/MEP logo.png" 
                 alt="MEP Logo" 
                 className="w-12 h-12 object-contain group-hover:scale-105 transition-all duration-300"
               />

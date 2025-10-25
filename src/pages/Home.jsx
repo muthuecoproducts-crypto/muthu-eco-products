@@ -48,26 +48,26 @@ const Home = () => {
         style={{ backgroundImage: "url('/images/header-image2.jpg')" }}
       >
         <div className="absolute inset-0 hero-gradient"></div>
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in">
             Pure. Fresh. 100% Organic.
           </h1>
-          <p className="text-xl md:text-2xl mb-10 leading-relaxed animate-slide-up">
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-10 leading-relaxed animate-slide-up px-2">
             From our trusted farms to your plate — experience food that's good for you and the planet.
           </p>
-          <p className="text-lg md:text-xl mb-10 leading-relaxed animate-slide-up opacity-90">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-10 leading-relaxed animate-slide-up opacity-90 px-2">
             We bring you the purest grains, millets, spices, and essentials — all grown naturally, free from harmful chemicals. Every product carries the love of the land and the honesty of our farmers.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up px-4">
             <Link 
               to="/products" 
-              className="btn-primary inline-block"
+              className="btn-primary inline-block text-center"
             >
               🛒 Explore Our Products
             </Link>
             <Link 
               to="/about" 
-              className="btn-secondary inline-block"
+              className="btn-secondary inline-block text-center"
             >
               💚 Know Our Story
             </Link>
@@ -82,11 +82,11 @@ const Home = () => {
 
       {/* About Snippet */}
       <section className="section-padding gradient-bg">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="content-spacing">
-              <p className="text-primary font-semibold text-lg tracking-wide uppercase">🍃 About Us</p>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+              <p className="text-primary font-semibold text-base sm:text-lg tracking-wide uppercase">🍃 About Us</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
                 Welcome to Muthu Organic Shop
               </h2>
               <p className="text-professional text-lg mb-4">
@@ -124,31 +124,31 @@ const Home = () => {
           <p className="section-subtitle">
             We value quality over quantity — ensuring that what reaches your kitchen is as pure as nature made it.
           </p>
-          <div className="grid md:grid-cols-5 gap-8">
-            <div className="card card-hover p-6 text-center">
-              <div className="text-4xl mb-4">🌾</div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
-              <p className="text-professional text-sm">Certified and verified for purity</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+            <div className="card card-hover p-4 sm:p-6 text-center">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌾</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
+              <p className="text-professional text-xs sm:text-sm">Certified and verified for purity</p>
             </div>
-            <div className="card card-hover p-6 text-center">
-              <div className="text-4xl mb-4">🌱</div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
-              <p className="text-professional text-sm">Supporting local and sustainable agriculture</p>
+            <div className="card card-hover p-4 sm:p-6 text-center">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌱</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
+              <p className="text-professional text-xs sm:text-sm">Supporting local and sustainable agriculture</p>
             </div>
-            <div className="card card-hover p-6 text-center">
-              <div className="text-4xl mb-4">💚</div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
-              <p className="text-professional text-sm">Just natural goodness</p>
+            <div className="card card-hover p-4 sm:p-6 text-center">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💚</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
+              <p className="text-professional text-xs sm:text-sm">Just natural goodness</p>
             </div>
-            <div className="card card-hover p-6 text-center">
-              <div className="text-4xl mb-4">🍚</div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
-              <p className="text-professional text-sm">Real flavor of native Tamil Nadu produce</p>
+            <div className="card card-hover p-4 sm:p-6 text-center">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🍚</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
+              <p className="text-professional text-xs sm:text-sm">Real flavor of native Tamil Nadu produce</p>
             </div>
-            <div className="card card-hover p-6 text-center">
-              <div className="text-4xl mb-4">♻️</div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Eco-Friendly</h3>
-              <p className="text-professional text-sm">Health and nature go hand in hand</p>
+            <div className="card card-hover p-4 sm:p-6 text-center">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">♻️</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Eco-Friendly</h3>
+              <p className="text-professional text-xs sm:text-sm">Health and nature go hand in hand</p>
             </div>
           </div>
         </div>
@@ -165,13 +165,13 @@ const Home = () => {
               Discover our carefully curated selection of premium organic products
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
             {productHighlights.map((product, index) => (
               <div key={index} className="group relative overflow-hidden rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-500">
                 <img 
                   src={product.image} 
                   alt={product.title}
-                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-64 sm:h-72 md:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center">
                   <div className="text-center text-white p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -206,26 +206,26 @@ const Home = () => {
           <p className="section-subtitle">
             We stand out in the organic food industry through our commitment to excellence
           </p>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="group hover-lift p-6 rounded-xl">
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">✅</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Quality Assured</h3>
-              <p className="text-professional">Rigorous quality checks and certifications</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">✅</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Quality Assured</h3>
+              <p className="text-professional text-sm sm:text-base">Rigorous quality checks and certifications</p>
             </div>
-            <div className="group hover-lift p-6 rounded-xl">
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🌾</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Farm Direct</h3>
-              <p className="text-professional">No middlemen, direct from trusted farms</p>
+            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">🌾</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Farm Direct</h3>
+              <p className="text-professional text-sm sm:text-base">No middlemen, direct from trusted farms</p>
             </div>
-            <div className="group hover-lift p-6 rounded-xl">
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">📦</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Safe Packaging</h3>
-              <p className="text-professional">Eco-friendly and secure packaging</p>
+            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">📦</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Safe Packaging</h3>
+              <p className="text-professional text-sm sm:text-base">Eco-friendly and secure packaging</p>
             </div>
-            <div className="group hover-lift p-6 rounded-xl">
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">💯</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Satisfaction</h3>
-              <p className="text-professional">100% customer satisfaction guarantee</p>
+            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">💯</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Satisfaction</h3>
+              <p className="text-professional text-sm sm:text-base">100% customer satisfaction guarantee</p>
             </div>
           </div>
         </div>
