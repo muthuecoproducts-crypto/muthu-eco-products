@@ -34,7 +34,7 @@ const About = () => {
             </div>
             <div>
               <img 
-                src="/images/about-img.jpg" 
+                src="/images/home.png" 
                 alt="Our Story" 
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />

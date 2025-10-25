@@ -7,42 +7,42 @@ const Products = () => {
       description: "From traditional rice to nourishing lentils, these staples form the heart of every healthy meal.",
       benefits: ["Naturally rich in protein and fiber", "Helps in maintaining balanced energy levels", "Easier digestion compared to polished or chemical-treated grains", "Retains authentic aroma and texture"],
       items: ["Traditional Rice Varieties", "Toor Dal", "Moong Dal", "Urad Dal", "Bengal Gram"],
-      image: "/images/food-menu1.jpg"
+      image: "/images/grains.png"
     },
     {
       title: "🌾 2. Native Millets",
       description: "The ancient superfoods that our ancestors loved — millets are the comeback stars of healthy living!",
       benefits: ["Gluten-free & rich in antioxidants", "Keeps you full for longer (great for weight management)", "Boosts heart health and immunity", "Ideal for diabetic-friendly meals"],
       items: ["Foxtail Millet", "Barnyard Millet", "Little Millet", "Kodo Millet", "Finger Millet (Ragi)"],
-      image: "/images/food-menu2.jpg"
+      image: "/images/native-millets.png"
     },
     {
       title: "🌶 3. Spices & Condiments",
       description: "Our spices are sun-dried, handpicked, and full of natural oils — giving you that unbeatable aroma and taste.",
       benefits: ["Natural source of antioxidants", "Improves digestion and metabolism", "Adds real flavor without artificial enhancers", "Helps in boosting immunity"],
       items: ["Turmeric", "Pepper", "Coriander", "Mustard", "Cumin", "Fenugreek"],
-      image: "/images/food-menu3.jpg"
+      image: "/images/spices.png"
     },
     {
       title: "🥥 4. Cold-Pressed Oils",
       description: "Extracted the traditional way — no heat, no chemicals, just raw nutrition in every drop.",
       benefits: ["Retains natural nutrients and aroma", "Supports heart health and balanced cholesterol", "Perfect for traditional cooking and skincare", "Long shelf life with pure extraction process"],
       items: ["Gingelly Oil", "Coconut Oil", "Groundnut Oil"],
-      image: "/images/food-menu4.jpg"
+      image: "/images/oils.png"
     },
     {
       title: "🍯 5. Natural Essentials",
       description: "Tiny kitchen heroes that make every dish wholesome and flavorful!",
       benefits: ["100% natural and unrefined", "Boosts immunity and energy levels", "Great alternatives to processed sugar and salts"],
       items: ["Pure Honey", "Jaggery", "Rock Salt", "Country Sugar"],
-      image: "/images/food-menu5.jpg"
+      image: "/images/honey.png"
     },
     {
       title: "🥓 6. Ready Mixes & Flours",
       description: "Convenience meets tradition — instant mixes made with care and love!",
       benefits: ["Freshly ground from organic grains", "Free from preservatives", "Quick, healthy meal options for busy mornings"],
       items: ["Idli/Dosa Batter", "Multigrain Mix", "Ragi Flour", "Besan", "Wheat Flour"],
-      image: "/images/food-menu6.jpg"
+      image: "/images/flour.png"
     }
   ]
 

@@ -25,17 +25,17 @@ const Home = () => {
   const productHighlights = [
     {
       title: "Organic Grains",
-      image: "/images/food1.jpg",
+      image: "/images/grains.png",
       description: "Chemical-free grains sourced directly from trusted farms"
     },
     {
       title: "Native Millets",
-      image: "/images/food2.jpg",
+      image: "/images/image.png",
       description: "Nutritious millets packed with health benefits"
     },
     {
       title: "Natural Spices",
-      image: "/images/food3.jpg",
+      image: "/images/spices.png",
       description: "Pure spices that retain authentic taste and aroma"
     }
   ]
@@ -108,7 +108,7 @@ const Home = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-lg"></div>
               <img 
-                src="/images/about-photo.jpg" 
+                src="/images/home.png" 
                 alt="About Us" 
                 className="relative w-full h-96 object-cover object-right rounded-xl shadow-professional hover-lift"
               />
