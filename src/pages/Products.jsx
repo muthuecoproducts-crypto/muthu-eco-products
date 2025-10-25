@@ -3,45 +3,51 @@ import { Link } from 'react-router-dom'
 const Products = () => {
   const productCategories = [
     {
-      title: "Organic Grains & Pulses",
-      description: "Premium quality grains and pulses, naturally grown without chemicals",
-      items: ["Organic Rice", "Wheat", "Black Gram", "Green Gram", "Chickpeas", "Red Lentils"],
+      title: "🌵 1. Organic Grains & Pulses",
+      description: "From traditional rice to nourishing lentils, these staples form the heart of every healthy meal.",
+      benefits: ["Naturally rich in protein and fiber", "Helps in maintaining balanced energy levels", "Easier digestion compared to polished or chemical-treated grains", "Retains authentic aroma and texture"],
+      items: ["Traditional Rice Varieties", "Toor Dal", "Moong Dal", "Urad Dal", "Bengal Gram"],
       image: "/images/food-menu1.jpg"
     },
     {
-      title: "Native Millets",
-      description: "Nutritious ancient grains packed with essential nutrients",
-      items: ["Finger Millet", "Pearl Millet", "Foxtail Millet", "Little Millet", "Barnyard Millet", "Kodo Millet"],
+      title: "🌾 2. Native Millets",
+      description: "The ancient superfoods that our ancestors loved — millets are the comeback stars of healthy living!",
+      benefits: ["Gluten-free & rich in antioxidants", "Keeps you full for longer (great for weight management)", "Boosts heart health and immunity", "Ideal for diabetic-friendly meals"],
+      items: ["Foxtail Millet", "Barnyard Millet", "Little Millet", "Kodo Millet", "Finger Millet (Ragi)"],
       image: "/images/food-menu2.jpg"
     },
     {
-      title: "Spices & Condiments",
-      description: "Aromatic spices that add authentic flavor to your dishes",
-      items: ["Turmeric Powder", "Red Chili Powder", "Coriander Seeds", "Cumin Seeds", "Black Pepper", "Cardamom"],
+      title: "🌶 3. Spices & Condiments",
+      description: "Our spices are sun-dried, handpicked, and full of natural oils — giving you that unbeatable aroma and taste.",
+      benefits: ["Natural source of antioxidants", "Improves digestion and metabolism", "Adds real flavor without artificial enhancers", "Helps in boosting immunity"],
+      items: ["Turmeric", "Pepper", "Coriander", "Mustard", "Cumin", "Fenugreek"],
       image: "/images/food-menu3.jpg"
     },
     {
-      title: "Cold-Pressed Oils",
-      description: "Pure, unrefined oils extracted using traditional methods",
-      items: ["Coconut Oil", "Sesame Oil", "Groundnut Oil", "Sunflower Oil", "Mustard Oil", "Castor Oil"],
+      title: "🥥 4. Cold-Pressed Oils",
+      description: "Extracted the traditional way — no heat, no chemicals, just raw nutrition in every drop.",
+      benefits: ["Retains natural nutrients and aroma", "Supports heart health and balanced cholesterol", "Perfect for traditional cooking and skincare", "Long shelf life with pure extraction process"],
+      items: ["Gingelly Oil", "Coconut Oil", "Groundnut Oil"],
       image: "/images/food-menu4.jpg"
     },
     {
-      title: "Natural Essentials",
-      description: "Daily essentials sourced from nature for healthy living",
-      items: ["Rock Salt", "Jaggery", "Honey", "Ghee", "Coconut Sugar", "Herbal Tea"],
+      title: "🍯 5. Natural Essentials",
+      description: "Tiny kitchen heroes that make every dish wholesome and flavorful!",
+      benefits: ["100% natural and unrefined", "Boosts immunity and energy levels", "Great alternatives to processed sugar and salts"],
+      items: ["Pure Honey", "Jaggery", "Rock Salt", "Country Sugar"],
       image: "/images/food-menu5.jpg"
     },
     {
-      title: "Ready Mixes & Flours",
-      description: "Convenient, healthy mixes and flours for quick cooking",
-      items: ["Millet Flour Mix", "Multigrain Flour", "Ragi Flour", "Idli Mix", "Dosa Mix", "Adai Mix"],
+      title: "🥓 6. Ready Mixes & Flours",
+      description: "Convenience meets tradition — instant mixes made with care and love!",
+      benefits: ["Freshly ground from organic grains", "Free from preservatives", "Quick, healthy meal options for busy mornings"],
+      items: ["Idli/Dosa Batter", "Multigrain Mix", "Ragi Flour", "Besan", "Wheat Flour"],
       image: "/images/food-menu6.jpg"
     }
   ]
 
   const handleEnquiry = () => {
-    const whatsappNumber = "+919876543210"
+    const whatsappNumber = "+917358260527"
     const message = "Hello! I'm interested in your organic products. Please share more details."
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
@@ -52,10 +58,9 @@ const Products = () => {
       {/* Hero Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Our Products</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">🌻 Our Product Range & Benefits</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Discover our wide range of organic products, carefully sourced from trusted farms 
-            to bring you the best of nature's bounty
+            Even though we're a humble store, our shelves are full of nature's treasures. Here's a glimpse of what we bring to your table — and why they're amazing for your health!
           </p>
           <button
             onClick={handleEnquiry}
@@ -82,13 +87,17 @@ const Products = () => {
                 <div className={index % 2 === 1 ? 'md:col-start-1' : ''}>
                   <h2 className="text-3xl font-bold text-gray-800 mb-4">{category.title}</h2>
                   <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
-                  <div className="grid grid-cols-2 gap-2 mb-6">
-                    {category.items.map((item, itemIndex) => (
-                      <div key={itemIndex} className="flex items-center space-x-2">
-                        <span className="text-primary">•</span>
-                        <span className="text-gray-700">{item}</span>
-                      </div>
-                    ))}
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-gray-800 mb-3">Benefits:</h4>
+                    <ul className="space-y-2 mb-4">
+                      {category.benefits.map((benefit, benefitIndex) => (
+                        <li key={benefitIndex} className="flex items-start space-x-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span className="text-gray-700">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-primary font-semibold">✨ Popular items: {category.items.join(", ")}</p>
                   </div>
                   <button
                     onClick={handleEnquiry}

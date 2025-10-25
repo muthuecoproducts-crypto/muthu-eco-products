@@ -50,17 +50,28 @@ const Home = () => {
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
-            Pure Organic Living
+            Pure. Fresh. 100% Organic.
           </h1>
           <p className="text-xl md:text-2xl mb-10 leading-relaxed animate-slide-up">
-            Fresh, organic food items sourced directly from trusted farms for your healthy lifestyle
+            From our trusted farms to your plate — experience food that's good for you and the planet.
           </p>
-          <Link 
-            to="/products" 
-            className="btn-primary inline-block animate-slide-up"
-          >
-            Explore Products
-          </Link>
+          <p className="text-lg md:text-xl mb-10 leading-relaxed animate-slide-up opacity-90">
+            We bring you the purest grains, millets, spices, and essentials — all grown naturally, free from harmful chemicals. Every product carries the love of the land and the honesty of our farmers.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+            <Link 
+              to="/products" 
+              className="btn-primary inline-block"
+            >
+              🛒 Explore Our Products
+            </Link>
+            <Link 
+              to="/about" 
+              className="btn-secondary inline-block"
+            >
+              💚 Know Our Story
+            </Link>
+          </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
@@ -74,14 +85,18 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="content-spacing">
-              <p className="text-primary font-semibold text-lg tracking-wide uppercase">About Us</p>
+              <p className="text-primary font-semibold text-lg tracking-wide uppercase">🍃 About Us</p>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-                We've been providing pure organic products for healthy living
+                Welcome to Muthu Organic Shop
               </h2>
+              <p className="text-professional text-lg mb-4">
+                Your local destination for clean, fresh, and wholesome organic food.
+              </p>
+              <p className="text-professional text-lg mb-4">
+                We believe that நல் உணவே அரும ருந்து — what you eat shapes your health, your energy, and your happiness.
+              </p>
               <p className="text-professional text-lg">
-                At Muthu Eco Products, we are committed to bringing you the finest organic food items. 
-                From chemical-free grains and pulses to nutritious millets, spices, and natural essentials, 
-                our products retain their authentic taste and health benefits.
+                Our journey began with one mission: 👉 To make healthy, chemical-free food accessible for every household. From chemical-free rice and pulses to traditional millets, spices, and natural essentials, every product is carefully sourced from trusted organic farms.
               </p>
               <Link 
                 to="/about" 
@@ -105,25 +120,35 @@ const Home = () => {
       {/* Our Promise */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="section-title">Our Promise</h2>
+          <h2 className="section-title">🥣 Our Promise</h2>
           <p className="section-subtitle">
-            We are committed to delivering excellence in every aspect of our organic products
+            We value quality over quantity — ensuring that what reaches your kitchen is as pure as nature made it.
           </p>
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="card card-hover p-8 text-center">
-              <div className="text-5xl mb-6">🌱</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">100% Organic</h3>
-              <p className="text-professional">All our products are certified organic and chemical-free, ensuring pure nutrition for your family</p>
+          <div className="grid md:grid-cols-5 gap-8">
+            <div className="card card-hover p-6 text-center">
+              <div className="text-4xl mb-4">🌾</div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
+              <p className="text-professional text-sm">Certified and verified for purity</p>
             </div>
-            <div className="card card-hover p-8 text-center">
-              <div className="text-5xl mb-6">🚚</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Farm Fresh</h3>
-              <p className="text-professional">Direct sourcing from trusted farms ensures maximum freshness and authentic taste in every product</p>
+            <div className="card card-hover p-6 text-center">
+              <div className="text-4xl mb-4">🌱</div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
+              <p className="text-professional text-sm">Supporting local and sustainable agriculture</p>
             </div>
-            <div className="card card-hover p-8 text-center">
-              <div className="text-5xl mb-6">💚</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Health First</h3>
-              <p className="text-professional">Products that promote healthy living and well-being for you and your loved ones</p>
+            <div className="card card-hover p-6 text-center">
+              <div className="text-4xl mb-4">💚</div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
+              <p className="text-professional text-sm">Just natural goodness</p>
+            </div>
+            <div className="card card-hover p-6 text-center">
+              <div className="text-4xl mb-4">🍚</div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
+              <p className="text-professional text-sm">Real flavor of native Tamil Nadu produce</p>
+            </div>
+            <div className="card card-hover p-6 text-center">
+              <div className="text-4xl mb-4">♻️</div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Eco-Friendly</h3>
+              <p className="text-professional text-sm">Health and nature go hand in hand</p>
             </div>
           </div>
         </div>

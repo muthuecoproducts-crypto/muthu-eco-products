@@ -4,9 +4,9 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Muthu Eco Products</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">🍃 About Us</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your trusted partner for pure, organic living and sustainable farming products
+            Welcome to Muthu Organic Shop, your neighborhood destination for fresh, farm-grown, and fully organic essentials.
           </p>
         </div>
       </section>
@@ -16,21 +16,19 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Brand Story</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Welcome to Muthu Organic Shop</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Muthu Eco Products was born from a simple belief: everyone deserves access to pure, 
-                  organic food that nourishes both body and soul. Founded with a commitment to sustainable 
-                  farming and healthy living, we have been serving families with the finest organic products.
+                  We believe that நல் உணவே அரும ருந்து — healthy food is truly the best medicine.
                 </p>
                 <p>
-                  Our journey began with a small group of passionate farmers and health enthusiasts who 
-                  recognized the need for chemical-free, authentic food products. Today, we proudly serve 
-                  thousands of customers who trust us for their organic food needs.
+                  Our journey began with a simple goal: to bring back purity to every kitchen. From 
+                  chemical-free grains and wholesome millets to aromatic spices and cold-pressed oils, 
+                  every product you see here comes straight from trusted organic farms.
                 </p>
                 <p>
-                  Every product in our collection is carefully selected and sourced directly from trusted 
-                  farms that share our commitment to organic farming practices and environmental sustainability.
+                  With love, honesty, and sustainability at our core, we aim to make clean eating easy, 
+                  affordable, and oh-so-delicious! 🌿
                 </p>
               </div>
             </div>
@@ -74,28 +72,34 @@ const About = () => {
       {/* Our Promise */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">Our Promise to You</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">💫 Why Muthu Organic Shop?</h2>
+          <p className="text-center text-gray-600 mb-8 text-lg">Because we don't just sell food — we sell trust.</p>
+          <p className="text-center text-gray-600 mb-12">At Muthu, every grain, every spice, and every drop of oil comes with our personal promise of purity.</p>
+          <div className="grid md:grid-cols-5 gap-6">
             <div className="text-center space-y-4">
-              <div className="text-4xl">🌱</div>
-              <h3 className="text-xl font-semibold">100% Organic Guarantee</h3>
-              <p className="text-gray-600">
-                Every product is certified organic, free from harmful chemicals, pesticides, and artificial additives.
-              </p>
+              <div className="text-4xl">✅</div>
+              <h3 className="text-lg font-semibold">Certified FSSAI</h3>
+              <p className="text-gray-600 text-sm">No. 22419534000178</p>
             </div>
             <div className="text-center space-y-4">
-              <div className="text-4xl">🤝</div>
-              <h3 className="text-xl font-semibold">Farmer Partnership</h3>
-              <p className="text-gray-600">
-                We work directly with farmers, ensuring fair prices and supporting sustainable agricultural practices.
-              </p>
+              <div className="text-4xl">✅</div>
+              <h3 className="text-lg font-semibold">Trusted Network</h3>
+              <p className="text-gray-600 text-sm">Of organic farmers</p>
             </div>
             <div className="text-center space-y-4">
-              <div className="text-4xl">💚</div>
-              <h3 className="text-xl font-semibold">Health & Wellness</h3>
-              <p className="text-gray-600">
-                Our products are carefully selected to provide maximum nutritional value and health benefits.
-              </p>
+              <div className="text-4xl">✅</div>
+              <h3 className="text-lg font-semibold">Locally Owned</h3>
+              <p className="text-gray-600 text-sm">& ethically run</p>
+            </div>
+            <div className="text-center space-y-4">
+              <div className="text-4xl">✅</div>
+              <h3 className="text-lg font-semibold">Transparent</h3>
+              <p className="text-gray-600 text-sm">Pricing and quality</p>
+            </div>
+            <div className="text-center space-y-4">
+              <div className="text-4xl">✅</div>
+              <h3 className="text-lg font-semibold">Tamil Nadu's Taste</h3>
+              <p className="text-gray-600 text-sm">The organic way! 🌾</p>
             </div>
           </div>
         </div>
