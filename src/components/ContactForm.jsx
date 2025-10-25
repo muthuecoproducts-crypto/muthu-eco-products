@@ -6,6 +6,8 @@ const ContactForm = () => {
     email: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState('')
 
   const handleChange = (e) => {
     setFormData({
@@ -14,12 +16,32 @@ const ContactForm = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({ name: '', email: '', message: '' })
+    setIsSubmitting(true)
+    setSubmitStatus('')
+
+    try {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -61,10 +83,23 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
+          disabled={isSubmitting}
+          className="bg-[#16a093] text-white px-8 py-3 rounded-full hover:bg-[#117964] transition-colors duration-300 font-medium uppercase disabled:opacity-50 disabled:cursor-not-allowed mt-6 w-full md:w-auto"
         >
-          Submit
+          {isSubmitting ? 'Sending...' : 'Submit'}
         </button>
+        
+        {submitStatus === 'success' && (
+          <div className="text-green-600 text-sm mt-2">
+            ✓ Message sent successfully! We'll get back to you soon.
+          </div>
+        )}
+        
+        {submitStatus === 'error' && (
+          <div className="text-red-600 text-sm mt-2">
+            ✗ Failed to send message. Please try again or contact us directly.
+          </div>
+        )}
       </form>
     </div>
   )
