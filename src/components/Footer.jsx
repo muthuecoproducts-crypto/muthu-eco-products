@@ -1,19 +1,29 @@
-import ContactForm from './ContactForm'
+
 
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* Location Map */}
           <div>
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-4 text-white">Get In Touch</h2>
+              <h2 className="text-3xl font-bold mb-4 text-white">Find Us</h2>
               <p className="text-gray-300 text-lg">
-                Ready to start your organic journey? Contact us today!
+                Visit our store for fresh organic products!
               </p>
             </div>
-            <ContactForm />
+            <div className="bg-gray-200 rounded-lg overflow-hidden h-64">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8663719309157!2d80.24565931482226!3d13.044262990816952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526650e0b6c595%3A0x4f74ddbff946af6b!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1635789012345!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
           
           {/* Company Info & Links */}
