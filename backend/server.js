@@ -1,5 +1,5 @@
 import express from "express";
-import nodemailer from "nodemailer";
+import * as brevo from '@getbrevo/brevo';
 import cors from "cors";
 import dotenv from "dotenv";
 
@@ -28,17 +28,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Muthu Eco Products API is running!" });
 });
 
-// Create transporter
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+// Initialize Brevo API
+let apiInstance = new brevo.TransactionalEmailsApi();
+let apiKey = apiInstance.authentications['apiKey'];
+apiKey.apiKey = process.env.BREVO_API_KEY;
 
 // Contact form endpoint
 app.post("/contact", async (req, res) => {
@@ -49,41 +42,39 @@ app.post("/contact", async (req, res) => {
     return res.status(400).json({ error: "All fields are required" });
   }
 
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: "muthuecoproducts@gmail.com",
-    subject: `New Contact Form Submission from ${name}`,
-    html: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #16a093;">New Contact Form Submission</h2>
-        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong></p>
-          <div style="background-color: white; padding: 15px; border-radius: 5px; margin-top: 10px;">
-            ${message.replace(/\n/g, "<br>")}
-          </div>
+  const sendSmtpEmail = new brevo.SendSmtpEmail();
+  
+  sendSmtpEmail.subject = `New Contact Form Submission from ${name}`;
+  sendSmtpEmail.htmlContent = `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <h2 style="color: #16a093;">New Contact Form Submission</h2>
+      <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <div style="background-color: white; padding: 15px; border-radius: 5px; margin-top: 10px;">
+          ${message.replace(/\n/g, "<br>")}
         </div>
-        <p style="color: #666; font-size: 12px; margin-top: 20px;">
-          This message was sent from the Muthu Eco Products contact form.
-        </p>
       </div>
-    `,
-  };
+      <p style="color: #666; font-size: 12px; margin-top: 20px;">
+        This message was sent from the Muthu Eco Products contact form.
+      </p>
+    </div>
+  `;
+  sendSmtpEmail.sender = { "name": "Muthu Eco Products Contact Form", "email": process.env.BREVO_SENDER_EMAIL };
+  sendSmtpEmail.to = [{ "email": process.env.RECIPIENT_EMAIL || "muthuecoproducts@gmail.com", "name": "Muthu Eco Products" }];
+  sendSmtpEmail.replyTo = { "email": email, "name": name };
 
   try {
     // Verify environment variables are set
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    if (!process.env.BREVO_API_KEY || !process.env.BREVO_SENDER_EMAIL) {
       throw new Error(
-        "Email configuration is missing. Please check environment variables."
+        "Brevo configuration is missing. Please check environment variables."
       );
     }
 
-    // Verify transporter
-    await transporter.verify();
-
     // Send email
-    await transporter.sendMail(mailOptions);
+    await apiInstance.sendTransacEmail(sendSmtpEmail);
     res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
     console.error("Detailed email error:", error);
