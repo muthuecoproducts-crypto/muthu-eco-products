@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import SEOHead from '../components/SEOHead'
+
 const Products = () => {
   const productCategories = [
     {
@@ -55,6 +57,12 @@ const Products = () => {
 
   return (
     <div className="pt-0">
+      <SEOHead 
+        title="Organic Products - Grains, Millets, Spices & Oils"
+        description="Shop premium organic products: chemical-free grains, native millets, pure spices, cold-pressed oils, natural honey & organic flour. Best prices in Chennai with home delivery."
+        keywords="buy organic grains Chennai, native millets online, organic spices Tamil Nadu, cold pressed oils, natural honey, organic flour, chemical-free products"
+        url="https://muthu-eco-products.vercel.app/products"
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEOHead from '../components/SEOHead'
 
 const Home = () => {
   const testimonials = [
@@ -42,6 +43,12 @@ const Home = () => {
 
   return (
     <div className="pt-18">
+      <SEOHead 
+        title="Home - 100% Organic Food Products"
+        description="Premium organic food products in Chennai. Chemical-free grains, native millets, pure spices & natural oils. Direct from Tamil Nadu farms. Free delivery above ₹1500. Order now!"
+        keywords="organic food Chennai, chemical-free grains, native millets Tamil Nadu, organic spices, natural oils, healthy food delivery Chennai, sustainable farming, pure honey, organic flour"
+        url="https://muthu-eco-products.vercel.app/"
+      />
       {/* Hero Section */}
       <section 
         className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
