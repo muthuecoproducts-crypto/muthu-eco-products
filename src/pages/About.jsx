@@ -111,9 +111,9 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/images/building-image.jpg" 
+                src="/images/quality.png" 
                 alt="Quality Control" 
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg border border-2 border-gray-200"
               />
             </div>
             <div>
