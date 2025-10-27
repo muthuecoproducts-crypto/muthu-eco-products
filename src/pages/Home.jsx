@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      text: "Amazing quality organic products! My family loves the taste and freshness.",
+      name: "Lakshmi Raman",
+      text: "இயற்கை உணவுகள் மிகவும் சுவையாக இருக்கிறது! எங்கள் குடும்பத்திற்கு மிகவும் பிடித்திருக்கிறது.",
       rating: 5,
-      image: "/images/male-photo1.jpg"
+      image: "/images/lakshmi.png"
     },
     {
-      name: "Rajesh Kumar",
-      text: "Best organic grains and millets. Highly recommend for healthy living.",
+      name: "Murugan Selvam",
+      text: "Best organic grains and millets. நல்ல தரமான சிறுதானியங்கள். வீட்டில் எல்லோருக்கும் பிடித்திருக்கிறது.",
       rating: 5,
-      image: "/images/male-photo2.jpg"
+      image: "/images/murugan.png"
     },
     {
-      name: "Meera Patel",
-      text: "Pure and authentic products. Great service and fast delivery.",
+      name: "Kamala Devi",
+      text: "Pure and authentic products. சுத்தமான இயற்கை உணவுகள். Great service and fast delivery.",
       rating: 5,
-      image: "/images/male-photo3.jpg"
+      image: "/images/kamala.png"
     }
   ]
 
