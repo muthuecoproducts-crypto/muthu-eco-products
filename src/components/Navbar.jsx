@@ -43,9 +43,9 @@ const Navbar = () => {
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/quote" className="btn-primary text-sm px-6 py-2 ml-4">
-                Get Quote
-              </Link>
+              <a href="tel:+917358260527" className="btn-primary text-sm px-6 py-2 ml-4">
+                📞 Call Now
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -94,13 +94,13 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <Link
-                to="/quote"
+              <a
+                href="tel:+917358260527"
                 className="block mx-4 mt-4 btn-primary text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Get Quote
-              </Link>
+                📞 Call Now
+              </a>
             </div>
           </div>
         </div>
