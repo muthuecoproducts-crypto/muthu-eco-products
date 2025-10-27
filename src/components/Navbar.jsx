@@ -31,12 +31,12 @@ const Navbar = () => {
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/about" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
-                About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
               <Link to="/products" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
                 Products
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link to="/about" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
+                About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link to="/contact" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
