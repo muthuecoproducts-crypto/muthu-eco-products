@@ -161,7 +161,7 @@ const Products = () => {
             </button>
             <Link
               to="/contact"
-              className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors duration-300 font-medium uppercase shadow-lg"
+              className="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors duration-300 font-medium uppercase shadow-lg"
             >
               Contact Us
             </Link>
