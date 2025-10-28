@@ -70,13 +70,13 @@ const Home = () => {
               to="/products" 
               className="btn-primary inline-block text-center"
             >
-              🛒 Explore Our Products
+              Explore Our Products
             </Link>
             <Link 
               to="/about" 
               className="btn-secondary inline-block text-center"
             >
-              💚 Know Our Story
+              Know Our Story
             </Link>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="content-spacing">
-              <p className="text-primary font-semibold text-base sm:text-lg tracking-wide uppercase">🍃 About Us</p>
+              <p className="text-primary font-semibold text-base sm:text-lg tracking-wide uppercase">About Us</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
                 Welcome to Muthu Organic Shop
               </h2>
@@ -103,7 +103,7 @@ const Home = () => {
                 We believe that நல் உணவே அரும ருந்து — what you eat shapes your health, your energy, and your happiness.
               </p>
               <p className="text-professional text-lg">
-                Our journey began with one mission: 👉 To make healthy, chemical-free food accessible for every household. From chemical-free rice and pulses to traditional millets, spices, and natural essentials, every product is carefully sourced from trusted organic farms.
+                Our journey began with one mission: To make healthy, chemical-free food accessible for every household. From chemical-free rice and pulses to traditional millets, spices, and natural essentials, every product is carefully sourced from trusted organic farms.
               </p>
               <Link 
                 to="/about" 
@@ -127,33 +127,54 @@ const Home = () => {
       {/* Our Promise */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="section-title">🥣 Our Promise</h2>
+          <h2 className="section-title">Our Promise</h2>
           <p className="section-subtitle">
             We value quality over quantity — ensuring that what reaches your kitchen is as pure as nature made it.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
             <div className="card card-hover p-4 sm:p-6 text-center">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌾</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
               <p className="text-professional text-xs sm:text-sm">Certified and verified for purity</p>
             </div>
             <div className="card card-hover p-4 sm:p-6 text-center">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌱</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                </svg>
+              </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
               <p className="text-professional text-xs sm:text-sm">Supporting local and sustainable agriculture</p>
             </div>
             <div className="card card-hover p-4 sm:p-6 text-center">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💚</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                </svg>
+              </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
               <p className="text-professional text-xs sm:text-sm">Just natural goodness</p>
             </div>
             <div className="card card-hover p-4 sm:p-6 text-center">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🍚</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                </svg>
+              </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
               <p className="text-professional text-xs sm:text-sm">Real flavor of native Tamil Nadu produce</p>
             </div>
             <div className="card card-hover p-4 sm:p-6 text-center">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">♻️</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"/>
+                  <path fillRule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clipRule="evenodd"/>
+                </svg>
+              </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Eco-Friendly</h3>
               <p className="text-professional text-xs sm:text-sm">Health and nature go hand in hand</p>
             </div>
@@ -215,22 +236,39 @@ const Home = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">✅</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Quality Assured</h3>
               <p className="text-professional text-sm sm:text-base">Rigorous quality checks and certifications</p>
             </div>
             <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">🌾</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                </svg>
+              </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Farm Direct</h3>
               <p className="text-professional text-sm sm:text-base">No middlemen, direct from trusted farms</p>
             </div>
             <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">📦</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.5 1.5 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"/>
+                  <path d="M19 8.839l-7.77 3.885a2.5 2.5 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"/>
+                </svg>
+              </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Safe Packaging</h3>
               <p className="text-professional text-sm sm:text-base">Eco-friendly and secure packaging</p>
             </div>
             <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">💯</div>
+              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"/>
+                </svg>
+              </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Satisfaction</h3>
               <p className="text-professional text-sm sm:text-base">100% customer satisfaction guarantee</p>
             </div>
