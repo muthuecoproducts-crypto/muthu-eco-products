@@ -82,9 +82,9 @@ const Footer = () => {
               © 2024 Muthu Eco Products. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400">
-              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-primary transition-colors">Shipping Policy</a>
+              <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
+              <a href="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</a>
             </div>
           </div>
         </div>
