@@ -1,14 +1,6 @@
-import SEOHead from '../components/SEOHead'
-
 const About = () => {
   return (
     <div className="pt-0">
-      <SEOHead 
-        title="About Us - Organic Food Suppliers Chennai"
-        description="Learn about Muthu Eco Products - your trusted organic food supplier in Chennai. We source chemical-free grains, millets, and spices directly from Tamil Nadu farmers since 2020."
-        keywords="about organic food supplier Chennai, chemical-free farming, Tamil Nadu organic products, sustainable agriculture, farm to table Chennai"
-        url="https://muthu-eco-products.vercel.app/about"
-      />
       {/* Hero Section */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">

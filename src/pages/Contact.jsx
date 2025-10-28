@@ -1,5 +1,4 @@
 import ContactForm from '../components/ContactForm'
-import SEOHead from '../components/SEOHead'
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
@@ -15,12 +14,7 @@ const Contact = () => {
 
   return (
     <div className="pt-0">
-      <SEOHead 
-        title="Contact Us - Organic Food Delivery Chennai"
-        description="Contact Muthu Eco Products for organic food delivery in Chennai. Call +917358260527 or visit our store in Perambur. Get quotes for bulk orders and wholesale prices."
-        keywords="organic food delivery Chennai, contact organic supplier, bulk order organic products, wholesale organic food Chennai, Perambur organic store"
-        url="https://muthu-eco-products.vercel.app/contact"
-      />
+
       {/* Hero Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
