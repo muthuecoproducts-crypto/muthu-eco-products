@@ -136,7 +136,7 @@ const Home = () => {
             </div>
             <div className="card card-hover p-4 sm:p-6 text-center">
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
-              <p className="text-professional text-xs sm:text-sm">Just natural goodness</p>
+              <p className="text-professional text-xs sm:text-sm">Free from chemicals, powered only by nature’s pure ingredients</p>
             </div>
             <div className="card card-hover p-4 sm:p-6 text-center">
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
@@ -205,28 +205,28 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                <div className="w-12 h-1 bg-primary rounded-full mb-3"></div>
+                {/* <div className="w-12 h-1 bg-primary rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Quality Assured</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">Rigorous quality checks and certifications</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-secondary hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                <div className="w-12 h-1 bg-secondary rounded-full mb-3"></div>
+                {/* <div className="w-12 h-1 bg-secondary rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Farm Direct</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">No middlemen, direct from trusted farms</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                <div className="w-12 h-1 bg-accent rounded-full mb-3"></div>
+                {/* <div className="w-12 h-1 bg-accent rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Safe Packaging</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">Eco-friendly and secure packaging</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                <div className="w-12 h-1 bg-primary rounded-full mb-3"></div>
+                {/* <div className="w-12 h-1 bg-primary rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Satisfaction</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">100% customer satisfaction guarantee</p>
@@ -249,11 +249,11 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-10">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="card card-hover p-8 text-center relative">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                {/* <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl">
                     "
                   </div>
-                </div>
+                </div> */}
                 <div className="flex justify-center mb-6 mt-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <span key={i} className="text-accent text-2xl">★</span>
