@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-professional z-50 border-b border-gray-100">
@@ -27,24 +28,36 @@ const Navbar = () => {
             
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
+              <Link to="/" className={`font-semibold transition-all duration-300 relative py-2 ${
+                location.pathname === '/' 
+                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
+                  : 'text-gray-700 hover:text-[#16a093]'
+              }`}>
                 Home
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/products" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
+              <Link to="/products" className={`font-semibold transition-all duration-300 relative py-2 ${
+                location.pathname === '/products' 
+                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
+                  : 'text-gray-700 hover:text-[#16a093]'
+              }`}>
                 Products
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/about" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
+              <Link to="/about" className={`font-semibold transition-all duration-300 relative py-2 ${
+                location.pathname === '/about' 
+                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
+                  : 'text-gray-700 hover:text-[#16a093]'
+              }`}>
                 About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/contact" className="text-gray-700 hover:text-primary font-semibold transition-all duration-300 relative group py-2">
+              <Link to="/contact" className={`font-semibold transition-all duration-300 relative py-2 ${
+                location.pathname === '/contact' 
+                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
+                  : 'text-gray-700 hover:text-[#16a093]'
+              }`}>
                 Contact
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <a href="tel:+917358260527" className="btn-primary text-sm px-6 py-2 ml-4">
-                📞 Call Now
+                Call Now
               </a>
             </div>
 
@@ -68,28 +81,44 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-b-lg border-t border-gray-100">
               <Link
                 to="/"
-                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 font-semibold rounded-lg transition-all duration-300"
+                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
+                  location.pathname === '/' 
+                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
+                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 font-semibold rounded-lg transition-all duration-300"
+                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
+                  location.pathname === '/about' 
+                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
+                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 to="/products"
-                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 font-semibold rounded-lg transition-all duration-300"
+                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
+                  location.pathname === '/products' 
+                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
+                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Products
               </Link>
               <Link
                 to="/contact"
-                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 font-semibold rounded-lg transition-all duration-300"
+                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
+                  location.pathname === '/contact' 
+                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
+                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Contact
@@ -99,7 +128,7 @@ const Navbar = () => {
                 className="block mx-4 mt-4 btn-primary text-center"
                 onClick={() => setIsOpen(false)}
               >
-                📞 Call Now
+                Call Now
               </a>
             </div>
           </div>
