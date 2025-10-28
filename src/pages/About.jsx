@@ -146,23 +146,23 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-12">Our Core Values</h2>
           <div className="grid md:grid-cols-4 gap-6">
-            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group">
-              <div className="w-8 h-8 bg-primary/20 rounded-full mx-auto mb-4 group-hover:bg-primary/30 transition-colors duration-300"></div>
+            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group border-t-4 border-primary">
+              {/* <div className="w-8 h-8 bg-primary/20 rounded-full mx-auto mb-4 group-hover:bg-primary/30 transition-colors duration-300"></div> */}
               <h3 className="font-semibold text-primary text-lg group-hover:text-primary/80 transition-colors duration-300">Purity</h3>
               <p className="text-sm text-gray-600 leading-relaxed">Uncompromising commitment to pure, natural products</p>
             </div>
-            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group">
-              <div className="w-8 h-8 bg-secondary/20 rounded-full mx-auto mb-4 group-hover:bg-secondary/30 transition-colors duration-300"></div>
+            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group border-t-4 border-accent">
+              {/* <div className="w-8 h-8 bg-secondary/20 rounded-full mx-auto mb-4 group-hover:bg-secondary/30 transition-colors duration-300"></div> */}
               <h3 className="font-semibold text-secondary text-lg group-hover:text-secondary/80 transition-colors duration-300">Transparency</h3>
               <p className="text-sm text-gray-600 leading-relaxed">Complete transparency in sourcing and processes</p>
             </div>
-            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group">
-              <div className="w-8 h-8 bg-accent/20 rounded-full mx-auto mb-4 group-hover:bg-accent/30 transition-colors duration-300"></div>
-              <h3 className="font-semibold text-accent text-lg group-hover:text-accent/80 transition-colors duration-300">Sustainability</h3>
+            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group border-t-4 border-primary">
+              {/* <div className="w-8 h-8 bg-accent/20 rounded-full mx-auto mb-4 group-hover:bg-accent/30 transition-colors duration-300"></div> */}
+              <h3 className="font-semibold text-primary text-lg group-hover:text-primary/80 transition-colors duration-300">Sustainability</h3>
               <p className="text-sm text-gray-600 leading-relaxed">Environmental responsibility in all our practices</p>
             </div>
-            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group">
-              <div className="w-8 h-8 bg-primary/20 rounded-full mx-auto mb-4 group-hover:bg-primary/30 transition-colors duration-300"></div>
+            <div className="space-y-3 bg-gradient-to-t from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group border-t-4 border-accent">
+              {/* <div className="w-8 h-8 bg-primary/20 rounded-full mx-auto mb-4 group-hover:bg-primary/30 transition-colors duration-300"></div> */}
               <h3 className="font-semibold text-primary text-lg group-hover:text-primary/80 transition-colors duration-300">Care</h3>
               <p className="text-sm text-gray-600 leading-relaxed">Genuine care for customer health and satisfaction</p>
             </div>

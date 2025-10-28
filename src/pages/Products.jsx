@@ -63,12 +63,12 @@ const Products = () => {
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
             Even though we're a humble store, our shelves are full of nature's treasures. Here's a glimpse of what we bring to your table — and why they're amazing for your health!
           </p>
-          <button
+          {/* <button
             onClick={handleEnquiry}
             className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
           >
             Make Enquiry
-          </button>
+          </button> */}
         </div>
       </section>
 
@@ -122,15 +122,15 @@ const Products = () => {
               <h3 className="text-xl font-semibold mb-3">Lab Tested</h3>
               <p className="text-gray-600">All products undergo rigorous laboratory testing</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-secondary">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent">
               <h3 className="text-xl font-semibold mb-3">Certified Organic</h3>
               <p className="text-gray-600">Certified by recognized organic certification bodies</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary">
               <h3 className="text-xl font-semibold mb-3">Chemical Free</h3>
               <p className="text-gray-600">No pesticides, chemicals, or artificial additives</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent">
               <h3 className="text-xl font-semibold mb-3">Fresh Delivery</h3>
               <p className="text-gray-600">Direct from farm to your doorstep</p>
             </div>
