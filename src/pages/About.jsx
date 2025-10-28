@@ -12,7 +12,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">🍃 About Us</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">About Us</h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Welcome to Muthu Organic Shop, your neighborhood destination for fresh, farm-grown, and fully organic essentials.
           </p>
@@ -36,7 +36,7 @@ const About = () => {
                 </p>
                 <p>
                   With love, honesty, and sustainability at our core, we aim to make clean eating easy, 
-                  affordable, and oh-so-delicious! 🌿
+                  affordable, and oh-so-delicious!
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">🎯</div>
+              
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Mission</h3>
               <p className="text-gray-600 text-sm sm:text-base px-2">
                 To provide pure, organic food products that promote healthy living while supporting 
@@ -65,7 +65,7 @@ const About = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">👁️</div>
+              
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Vision</h3>
               <p className="text-gray-600 text-sm sm:text-base px-2">
                 To become the most trusted name in organic food products, creating a healthier world 
@@ -80,34 +80,29 @@ const About = () => {
       {/* Our Promise */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">💫 Why Muthu Organic Shop?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">Why Muthu Organic Shop?</h2>
           <p className="text-center text-gray-600 mb-8 text-lg">Because we don't just sell food — we sell trust.</p>
           <p className="text-center text-gray-600 mb-12">At Muthu, every grain, every spice, and every drop of oil comes with our personal promise of purity.</p>
           <div className="grid md:grid-cols-5 gap-6">
-            <div className="text-center space-y-4">
-              <div className="text-4xl">✅</div>
+            <div className="text-center space-y-4 bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold">Certified FSSAI</h3>
               <p className="text-gray-600 text-sm">No. 22419534000178</p>
             </div>
-            <div className="text-center space-y-4">
-              <div className="text-4xl">✅</div>
+            <div className="text-center space-y-4 bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold">Trusted Network</h3>
               <p className="text-gray-600 text-sm">Of organic farmers</p>
             </div>
-            <div className="text-center space-y-4">
-              <div className="text-4xl">✅</div>
+            <div className="text-center space-y-4 bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold">Locally Owned</h3>
               <p className="text-gray-600 text-sm">& ethically run</p>
             </div>
-            <div className="text-center space-y-4">
-              <div className="text-4xl">✅</div>
+            <div className="text-center space-y-4 bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold">Transparent</h3>
               <p className="text-gray-600 text-sm">Pricing and quality</p>
             </div>
-            <div className="text-center space-y-4">
-              <div className="text-4xl">✅</div>
+            <div className="text-center space-y-4 bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold">Tamil Nadu's Taste</h3>
-              <p className="text-gray-600 text-sm">The organic way! 🌾</p>
+              <p className="text-gray-600 text-sm">The organic way!</p>
             </div>
           </div>
         </div>
@@ -154,24 +149,20 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-12">Our Core Values</h2>
           <div className="grid md:grid-cols-4 gap-6">
-            <div className="space-y-3">
-              <div className="text-3xl">🌿</div>
-              <h3 className="font-semibold">Purity</h3>
+            <div className="space-y-3 bg-white p-6 rounded-lg shadow-md">
+              <h3 className="font-semibold text-primary">Purity</h3>
               <p className="text-sm text-gray-600">Uncompromising commitment to pure, natural products</p>
             </div>
-            <div className="space-y-3">
-              <div className="text-3xl">🔍</div>
-              <h3 className="font-semibold">Transparency</h3>
+            <div className="space-y-3 bg-white p-6 rounded-lg shadow-md">
+              <h3 className="font-semibold text-primary">Transparency</h3>
               <p className="text-sm text-gray-600">Complete transparency in sourcing and processes</p>
             </div>
-            <div className="space-y-3">
-              <div className="text-3xl">🌍</div>
-              <h3 className="font-semibold">Sustainability</h3>
+            <div className="space-y-3 bg-white p-6 rounded-lg shadow-md">
+              <h3 className="font-semibold text-primary">Sustainability</h3>
               <p className="text-sm text-gray-600">Environmental responsibility in all our practices</p>
             </div>
-            <div className="space-y-3">
-              <div className="text-3xl">❤️</div>
-              <h3 className="font-semibold">Care</h3>
+            <div className="space-y-3 bg-white p-6 rounded-lg shadow-md">
+              <h3 className="font-semibold text-primary">Care</h3>
               <p className="text-sm text-gray-600">Genuine care for customer health and satisfaction</p>
             </div>
           </div>
