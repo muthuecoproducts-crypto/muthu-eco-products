@@ -209,21 +209,33 @@ const Home = () => {
             We stand out in the organic food industry through our commitment to excellence
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Quality Assured</h3>
-              <p className="text-professional text-sm sm:text-base">Rigorous quality checks and certifications</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
+              <div className="mb-4">
+                <div className="w-12 h-1 bg-primary rounded-full mb-3"></div>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Quality Assured</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">Rigorous quality checks and certifications</p>
             </div>
-            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Farm Direct</h3>
-              <p className="text-professional text-sm sm:text-base">No middlemen, direct from trusted farms</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-secondary hover:shadow-xl transition-all duration-300 group">
+              <div className="mb-4">
+                <div className="w-12 h-1 bg-secondary rounded-full mb-3"></div>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Farm Direct</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">No middlemen, direct from trusted farms</p>
             </div>
-            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Safe Packaging</h3>
-              <p className="text-professional text-sm sm:text-base">Eco-friendly and secure packaging</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
+              <div className="mb-4">
+                <div className="w-12 h-1 bg-accent rounded-full mb-3"></div>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Safe Packaging</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">Eco-friendly and secure packaging</p>
             </div>
-            <div className="group hover-lift p-4 sm:p-6 rounded-xl">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">Satisfaction</h3>
-              <p className="text-professional text-sm sm:text-base">100% customer satisfaction guarantee</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
+              <div className="mb-4">
+                <div className="w-12 h-1 bg-primary rounded-full mb-3"></div>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Satisfaction</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">100% customer satisfaction guarantee</p>
             </div>
           </div>
         </div>
