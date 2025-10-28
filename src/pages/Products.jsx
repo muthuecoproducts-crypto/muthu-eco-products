@@ -5,42 +5,42 @@ import SEOHead from '../components/SEOHead'
 const Products = () => {
   const productCategories = [
     {
-      title: "🌵 1. Organic Grains & Pulses",
+      title: "1. Organic Grains & Pulses",
       description: "From traditional rice to nourishing lentils, these staples form the heart of every healthy meal.",
       benefits: ["Naturally rich in protein and fiber", "Helps in maintaining balanced energy levels", "Easier digestion compared to polished or chemical-treated grains", "Retains authentic aroma and texture"],
       items: ["Traditional Rice Varieties", "Toor Dal", "Moong Dal", "Urad Dal", "Bengal Gram"],
       image: "/images/grains.png"
     },
     {
-      title: "🌾 2. Native Millets",
+      title: "2. Native Millets",
       description: "The ancient superfoods that our ancestors loved — millets are the comeback stars of healthy living!",
       benefits: ["Gluten-free & rich in antioxidants", "Keeps you full for longer (great for weight management)", "Boosts heart health and immunity", "Ideal for diabetic-friendly meals"],
       items: ["Foxtail Millet", "Barnyard Millet", "Little Millet", "Kodo Millet", "Finger Millet (Ragi)"],
       image: "/images/native-millets.png"
     },
     {
-      title: "🌶 3. Spices & Condiments",
+      title: "3. Spices & Condiments",
       description: "Our spices are sun-dried, handpicked, and full of natural oils — giving you that unbeatable aroma and taste.",
       benefits: ["Natural source of antioxidants", "Improves digestion and metabolism", "Adds real flavor without artificial enhancers", "Helps in boosting immunity"],
       items: ["Turmeric", "Pepper", "Coriander", "Mustard", "Cumin", "Fenugreek"],
       image: "/images/spices.png"
     },
     {
-      title: "🥥 4. Cold-Pressed Oils",
+      title: "4. Cold-Pressed Oils",
       description: "Extracted the traditional way — no heat, no chemicals, just raw nutrition in every drop.",
       benefits: ["Retains natural nutrients and aroma", "Supports heart health and balanced cholesterol", "Perfect for traditional cooking and skincare", "Long shelf life with pure extraction process"],
       items: ["Gingelly Oil", "Coconut Oil", "Groundnut Oil"],
       image: "/images/oils.png"
     },
     {
-      title: "🍯 5. Natural Essentials",
+      title: "5. Natural Essentials",
       description: "Tiny kitchen heroes that make every dish wholesome and flavorful!",
       benefits: ["100% natural and unrefined", "Boosts immunity and energy levels", "Great alternatives to processed sugar and salts"],
       items: ["Pure Honey", "Jaggery", "Rock Salt", "Country Sugar"],
       image: "/images/honey.png"
     },
     {
-      title: "🥓 6. Ready Mixes & Flours",
+      title: "6. Ready Mixes & Flours",
       description: "Convenience meets tradition — instant mixes made with care and love!",
       benefits: ["Freshly ground from organic grains", "Free from preservatives", "Quick, healthy meal options for busy mornings"],
       items: ["Idli/Dosa Batter", "Multigrain Mix", "Ragi Flour", "Besan", "Wheat Flour"],
@@ -66,7 +66,7 @@ const Products = () => {
       {/* Hero Section */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">🌻 Our Product Range & Benefits</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">Our Product Range & Benefits</h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
             Even though we're a humble store, our shelves are full of nature's treasures. Here's a glimpse of what we bring to your table — and why they're amazing for your health!
           </p>
@@ -105,7 +105,7 @@ const Products = () => {
                         </li>
                       ))}
                     </ul>
-                    <p className="text-primary font-semibold">✨ Popular items: {category.items.join(", ")}</p>
+                    <p className="text-primary font-semibold">Popular items: {category.items.join(", ")}</p>
                   </div>
                   <button
                     onClick={handleEnquiry}
@@ -125,24 +125,20 @@ const Products = () => {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-12">Quality Assurance</h2>
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="text-4xl">🔬</div>
-              <h3 className="text-xl font-semibold">Lab Tested</h3>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary">
+              <h3 className="text-xl font-semibold mb-3">Lab Tested</h3>
               <p className="text-gray-600">All products undergo rigorous laboratory testing</p>
             </div>
-            <div className="space-y-4">
-              <div className="text-4xl">📜</div>
-              <h3 className="text-xl font-semibold">Certified Organic</h3>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-secondary">
+              <h3 className="text-xl font-semibold mb-3">Certified Organic</h3>
               <p className="text-gray-600">Certified by recognized organic certification bodies</p>
             </div>
-            <div className="space-y-4">
-              <div className="text-4xl">🌱</div>
-              <h3 className="text-xl font-semibold">Chemical Free</h3>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent">
+              <h3 className="text-xl font-semibold mb-3">Chemical Free</h3>
               <p className="text-gray-600">No pesticides, chemicals, or artificial additives</p>
             </div>
-            <div className="space-y-4">
-              <div className="text-4xl">🚚</div>
-              <h3 className="text-xl font-semibold">Fresh Delivery</h3>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary">
+              <h3 className="text-xl font-semibold mb-3">Fresh Delivery</h3>
               <p className="text-gray-600">Direct from farm to your doorstep</p>
             </div>
           </div>
@@ -159,13 +155,13 @@ const Products = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={handleEnquiry}
-              className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
+              className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-colors duration-300 font-medium uppercase shadow-lg"
             >
               WhatsApp Enquiry
             </button>
             <Link
               to="/contact"
-              className="bg-white text-primary border-2 border-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-colors duration-300 font-medium uppercase"
+              className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors duration-300 font-medium uppercase shadow-lg"
             >
               Contact Us
             </Link>
