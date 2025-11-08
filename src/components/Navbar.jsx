@@ -6,8 +6,8 @@ const Navbar = () => {
   const location = useLocation()
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-professional z-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-gray-200">
+        <div className="px-6">
           <div className="flex justify-between items-center h-20">
             {/* Enhanced Logo */}
             <Link to="/" className="flex items-center space-x-3 group">
