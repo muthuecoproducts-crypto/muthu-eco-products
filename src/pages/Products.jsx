@@ -83,36 +83,36 @@ const Products = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div className="p-8 md:p-12">
-                    <h2 className="text-3xl font-bold text-gray-800 mb-4">{category.title}</h2>
-                    <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
-                    <div className="mb-6">
-                      <h4 className="font-semibold text-gray-800 mb-3">Benefits:</h4>
-                      <ul className="space-y-2 mb-4">
-                        {category.benefits.map((benefit, benefitIndex) => (
-                          <li key={benefitIndex} className="flex items-start space-x-2">
-                            <span className="text-primary mt-1">•</span>
-                            <span className="text-gray-700">{benefit}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <p className="text-primary font-semibold">Popular items: {category.items.join(", ")}</p>
-                    </div>
-                    <button
-                      onClick={handleEnquiry}
-                      className="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
-                    >
-                      Enquire Now
-                    </button>
+              <div 
+                key={index} 
+                className="relative rounded-2xl overflow-hidden shadow-xl min-h-[500px] flex items-center"
+                style={{
+                  backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, transparent 100%), url('${category.image}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}
+              >
+                <div className="p-8 md:p-12 max-w-2xl">
+                  <h2 className="text-3xl font-bold text-gray-800 mb-4">{category.title}</h2>
+                  <p className="text-gray-700 mb-6 text-lg">{category.description}</p>
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-gray-800 mb-3">Benefits:</h4>
+                    <ul className="space-y-2 mb-4">
+                      {category.benefits.map((benefit, benefitIndex) => (
+                        <li key={benefitIndex} className="flex items-start space-x-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span className="text-gray-700">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-primary font-semibold">Popular items: {category.items.join(", ")}</p>
                   </div>
-                  <div 
-                    className="h-full min-h-[400px] bg-cover bg-center"
-                    style={{
-                      backgroundImage: `url('${category.image}')`,
-                    }}
-                  ></div>
+                  <button
+                    onClick={handleEnquiry}
+                    className="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase shadow-lg"
+                  >
+                    Enquire Now
+                  </button>
                 </div>
               </div>
             ))}
