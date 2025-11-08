@@ -87,7 +87,7 @@ const Products = () => {
                 key={index} 
                 className="relative rounded-2xl overflow-hidden shadow-xl min-h-[500px] flex items-center"
                 style={{
-                  backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, transparent 100%), url('${category.image}')`,
+                  backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.3) 100%), url('${category.image}')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
