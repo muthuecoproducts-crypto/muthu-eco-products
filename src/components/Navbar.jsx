@@ -3,7 +3,14 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [copied, setCopied] = useState(false)
   const location = useLocation()
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText('+917358260527')
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
 
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-gray-200">
@@ -56,9 +63,9 @@ const Navbar = () => {
               }`}>
                 Contact
               </Link>
-              <a href="tel:+917358260527" className="btn-primary text-sm px-6 py-2 ml-4">
-                Call Now
-              </a>
+              <button onClick={handleCopyPhone} className="btn-primary text-sm px-6 py-2 ml-4 relative">
+                {copied ? 'Copied!' : 'Call Now'}
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -123,16 +130,20 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <a
-                href="tel:+917358260527"
-                className="block mx-4 mt-4 btn-primary text-center"
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={() => { handleCopyPhone(); setIsOpen(false); }}
+                className="block mx-4 mt-4 btn-primary text-center w-[calc(100%-2rem)]"
               >
-                Call Now
-              </a>
+                {copied ? 'Copied!' : 'Call Now'}
+              </button>
             </div>
           </div>
         </div>
+      {copied && (
+        <div className="fixed top-24 right-6 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-slide-in-right">
+          Phone number copied to clipboard
+        </div>
+      )}
       </nav>
   )
 }
