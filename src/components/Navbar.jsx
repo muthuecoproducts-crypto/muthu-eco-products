@@ -28,7 +28,7 @@ const Navbar = () => {
                   Muthu Organic Products
                 </span>
                 <span className="text-xs text-gray-500 font-medium tracking-wide">
-                  Sustainable Solutions
+                  Natural, Organic, Traditional
                 </span>
               </div>
             </Link>

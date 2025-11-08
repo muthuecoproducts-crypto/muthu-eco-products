@@ -84,71 +84,26 @@ const Home = () => {
             We value quality over quantity — ensuring that what reaches your kitchen is as pure as nature made it.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
-            <div className="card card-hover p-4 sm:p-6 text-center">
-              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
-              <p className="text-professional text-xs sm:text-sm">Certified and verified for purity</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Certified and verified for purity</p>
             </div>
-            <div className="card card-hover p-4 sm:p-6 text-center">
-              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
-              <p className="text-professional text-xs sm:text-sm">Supporting local and sustainable agriculture</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Supporting local and sustainable agriculture</p>
             </div>
-            <div className="card card-hover p-4 sm:p-6 text-center">
-              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
-              <p className="text-professional text-xs sm:text-sm">Free from chemicals, powered only by nature’s pure ingredients</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Free from chemicals, powered only by nature’s pure ingredients</p>
             </div>
-            <div className="card card-hover p-4 sm:p-6 text-center">
-              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
-              <p className="text-professional text-xs sm:text-sm">Real flavor of native Tamil Nadu produce</p>
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Real flavor of native Tamil Nadu produce</p>
             </div>
-            <div className="card card-hover p-4 sm:p-6 text-center">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Eco-Friendly</h3>
               <p className="text-professional text-xs sm:text-sm">Health and nature go hand in hand</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Highlights */}
-      <section className="section-padding gradient-bg">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="section-title">
-              Product Categories
-            </h2>
-            <p className="section-subtitle">
-              Discover our carefully curated selection of premium organic products
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
-            {productHighlights.map((product, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-500">
-                <img 
-                  src={product.image} 
-                  alt={product.title}
-                  className="w-full h-64 sm:h-72 md:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center">
-                  <div className="text-center text-white p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-3xl font-bold mb-3">{product.title}</h3>
-                    <p className="mb-6 text-lg">{product.description}</p>
-                    <Link 
-                      to="/products" 
-                      className="inline-block bg-white text-[#16a093] px-8 py-3 rounded-full hover:bg-[#16a093] hover:text-white transition-all duration-300 font-semibold uppercase tracking-wide shadow-lg"
-                    >
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-                {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                  <Link 
-                    to="/products" 
-                    className="bg-white/90 text-[#16a093] px-6 py-2 rounded-full hover:bg-[#16a093] hover:text-white transition-all duration-300 font-semibold text-sm shadow-lg backdrop-blur-sm"
-                  >
-                    View Products
-                  </Link>
-                </div> */}
-              </div>
-            ))}
           </div>
         </div>
       </section>
