@@ -13,7 +13,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-gray-200">
+    <>
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-gradient-to-r from-white/95 via-pink-50/95 to-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-pink-100">
         <div className="px-6">
           <div className="flex justify-between items-center h-20">
             {/* Enhanced Logo */}
@@ -83,68 +84,73 @@ const Navbar = () => {
             </div>
         </div>
 
-          {/* Mobile Menu */}
-          <div className={`lg:hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-            <div className="px-2 pt-2 pb-4 space-y-2 bg-white/95 backdrop-blur-md rounded-b-lg border-t border-gray-100">
-              <Link
-                to="/"
-                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
-                  location.pathname === '/' 
-                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
-                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
-                  location.pathname === '/about' 
-                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
-                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                to="/products"
-                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
-                  location.pathname === '/products' 
-                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
-                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                Products
-              </Link>
-              <Link
-                to="/contact"
-                className={`block px-4 py-3 font-semibold rounded-lg transition-all duration-300 ${
-                  location.pathname === '/contact' 
-                    ? 'text-[#16a093] bg-[#16a093]/10 border-l-4 border-[#16a093]' 
-                    : 'text-gray-700 hover:text-[#16a093] hover:bg-gray-50'
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
-              <button
-                onClick={() => { handleCopyPhone(); setIsOpen(false); }}
-                className="block mx-4 mt-4 btn-primary text-center w-[calc(100%-2rem)]"
-              >
-                {copied ? 'Copied!' : 'Call Now'}
-              </button>
-            </div>
+        </div>
+      </nav>
+      
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="fixed top-28 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-white backdrop-blur-md shadow-2xl z-40 rounded-3xl border border-gray-200 lg:hidden">
+          <div className="p-4 space-y-2">
+            <Link
+              to="/"
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
+                location.pathname === '/' 
+                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
+                  : 'text-gray-700 bg-white hover:bg-pink-100'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="/products"
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
+                location.pathname === '/products' 
+                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
+                  : 'text-gray-700 bg-white hover:bg-pink-100'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Products
+            </Link>
+            <Link
+              to="/about"
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
+                location.pathname === '/about' 
+                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
+                  : 'text-gray-700 bg-white hover:bg-pink-100'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
+                location.pathname === '/contact' 
+                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
+                  : 'text-gray-700 bg-white hover:bg-pink-100'
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
+            <button
+              onClick={() => { handleCopyPhone(); setIsOpen(false); }}
+              className="w-full mt-2 btn-primary text-center py-3"
+            >
+              {copied ? 'Copied!' : 'Call Now'}
+            </button>
           </div>
         </div>
+      )}
+      
       {copied && (
         <div className="fixed top-24 right-6 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-slide-in-right">
           Phone number copied to clipboard
         </div>
       )}
-      </nav>
+    </>
   )
 }
 
