@@ -2,12 +2,24 @@ const About = () => {
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">About Us</h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
+      <section 
+        className="min-h-[60vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
+        style={{ backgroundImage: "url('/images/organic.png')" }}
+      >
+        <div className="absolute inset-0 hero-gradient"></div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight animate-slide-up">
+            About Us
+          </h1>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 leading-relaxed animate-slide-up px-2">
             Welcome to Muthu Organic Shop, your neighborhood destination for fresh, farm-grown, and fully organic essentials.
           </p>
+          <a
+            href="/contact"
+            className="btn-primary inline-block animate-slide-up"
+          >
+            Contact Us
+          </a>
         </div>
       </section>
 
@@ -108,34 +120,25 @@ const About = () => {
       {/* Sourcing & Quality Focus */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="/images/quality.png" 
-                alt="Quality Control" 
-                className="w-full h-full object-cover rounded-lg shadow-lg border border-2 border-gray-200"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Sourcing & Quality Focus</h2>
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  <strong>Direct Farm Sourcing:</strong> We maintain direct relationships with certified 
-                  organic farmers across the region, ensuring traceability and quality from farm to table.
-                </p>
-                <p>
-                  <strong>Rigorous Quality Checks:</strong> Every batch undergoes multiple quality 
-                  assessments including purity tests, nutritional analysis, and freshness verification.
-                </p>
-                <p>
-                  <strong>Sustainable Practices:</strong> We support farming methods that preserve soil 
-                  health, conserve water, and maintain biodiversity for future generations.
-                </p>
-                <p>
-                  <strong>Authentic Taste:</strong> Our products retain their natural flavors and 
-                  nutritional properties through careful handling and minimal processing.
-                </p>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Sourcing & Quality Focus</h2>
+            <div className="space-y-4 text-gray-600">
+              <p>
+                <strong>Direct Farm Sourcing:</strong> We maintain direct relationships with certified 
+                organic farmers across the region, ensuring traceability and quality from farm to table.
+              </p>
+              <p>
+                <strong>Rigorous Quality Checks:</strong> Every batch undergoes multiple quality 
+                assessments including purity tests, nutritional analysis, and freshness verification.
+              </p>
+              <p>
+                <strong>Sustainable Practices:</strong> We support farming methods that preserve soil 
+                health, conserve water, and maintain biodiversity for future generations.
+              </p>
+              <p>
+                <strong>Authentic Taste:</strong> Our products retain their natural flavors and 
+                nutritional properties through careful handling and minimal processing.
+              </p>
             </div>
           </div>
         </div>
