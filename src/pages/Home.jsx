@@ -74,48 +74,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Snippet */}
-      <section className="section-padding gradient-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="content-spacing">
-              <p className="text-primary font-semibold text-base sm:text-lg tracking-wide uppercase">About Us</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Welcome to Muthu Organic Shop
-              </h2>
-              <p className="text-professional text-lg mb-4">
-                Your local destination for clean, fresh, and wholesome organic food.
-              </p>
-              <p className="text-professional text-lg mb-4">
-                We believe that நல் உணவே அரும ருந்து — what you eat shapes your health, your energy, and your happiness.
-              </p>
-              <p className="text-professional text-lg">
-                Our journey began with one mission: To make healthy, chemical-free food accessible for every household. From chemical-free rice and pulses to traditional millets, spices, and natural essentials, every product is carefully sourced from trusted organic farms.
-              </p>
-              <Link 
-                to="/about" 
-                className="btn-primary inline-block"
-              >
-                Learn More
-              </Link>
-            </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-lg"></div>
-              <img 
-                src="/images/home.png" 
-                alt="About Us" 
-                className="relative w-full h-96 object-cover object-right rounded-xl shadow-professional hover-lift"
-              />
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Our Promise */}
