@@ -1,10 +1,29 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const location = useLocation()
+  const navRef = useRef(null)
+  const mobileMenuRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target) && 
+          mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setIsOpen(false)
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isOpen])
 
   const handleCopyPhone = () => {
     navigator.clipboard.writeText('+917358260527')
@@ -14,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-gradient-to-r from-white/95 via-pink-50/95 to-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-pink-100">
+    <nav ref={navRef} className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-gradient-to-r from-white/95 via-pink-50/95 to-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-pink-100">
         <div className="px-6">
           <div className="flex justify-between items-center h-20">
             {/* Enhanced Logo */}
@@ -89,49 +108,41 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed top-28 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-white backdrop-blur-md shadow-2xl z-40 rounded-3xl border border-gray-200 lg:hidden">
+        <div ref={mobileMenuRef} className="fixed top-28 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-white backdrop-blur-md shadow-2xl z-40 rounded-3xl border border-gray-200 lg:hidden animate-slide-down">
           <div className="p-4 space-y-2">
             <Link
               to="/"
-              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
-                location.pathname === '/' 
-                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
-                  : 'text-gray-700 bg-white hover:bg-pink-100'
-              }`}
               onClick={() => setIsOpen(false)}
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
+                location.pathname === '/' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+              }`}
             >
               Home
             </Link>
             <Link
               to="/products"
-              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
-                location.pathname === '/products' 
-                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
-                  : 'text-gray-700 bg-white hover:bg-pink-100'
-              }`}
               onClick={() => setIsOpen(false)}
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
+                location.pathname === '/products' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+              }`}
             >
               Products
             </Link>
             <Link
               to="/about"
-              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
-                location.pathname === '/about' 
-                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
-                  : 'text-gray-700 bg-white hover:bg-pink-100'
-              }`}
               onClick={() => setIsOpen(false)}
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
+                location.pathname === '/about' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+              }`}
             >
               About
             </Link>
             <Link
               to="/contact"
-              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 ${
-                location.pathname === '/contact' 
-                  ? 'text-white bg-gradient-to-r from-[#16a093] to-[#117964]' 
-                  : 'text-gray-700 bg-white hover:bg-pink-100'
-              }`}
               onClick={() => setIsOpen(false)}
+              className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
+                location.pathname === '/contact' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+              }`}
             >
               Contact
             </Link>
@@ -146,7 +157,7 @@ const Navbar = () => {
       )}
       
       {copied && (
-        <div className="fixed top-24 right-6 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-slide-in-right">
+        <div className="fixed top-28 right-6 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-slide-in-right">
           Phone number copied to clipboard
         </div>
       )}
