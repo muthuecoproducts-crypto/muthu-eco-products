@@ -57,18 +57,24 @@ const Products = () => {
     <div className="pt-0">
 
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">Our Product Range & Benefits</h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
+      <section 
+        className="min-h-[60vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
+        style={{ backgroundImage: "url('/images/organic.png')" }}
+      >
+        <div className="absolute inset-0 hero-gradient"></div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight animate-slide-up">
+            Our Product Range & Benefits
+          </h1>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 leading-relaxed animate-slide-up px-2">
             Even though we're a humble store, our shelves are full of nature's treasures. Here's a glimpse of what we bring to your table — and why they're amazing for your health!
           </p>
-          {/* <button
-            onClick={handleEnquiry}
-            className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
+          <Link
+            to="/contact"
+            className="btn-primary inline-block animate-slide-up"
           >
-            Make Enquiry
-          </button> */}
+            Contact Us
+          </Link>
         </div>
       </section>
 
@@ -77,35 +83,36 @@ const Products = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div key={index} className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-col-dense' : ''}`}>
-                <div className={index % 2 === 1 ? 'md:col-start-2' : ''}>
-                  <img 
-                    src={category.image} 
-                    alt={category.title}
-                    className="w-64 h-64 mx-auto rounded-full object-cover shadow-lg"
-                  />
-                </div>
-                <div className={index % 2 === 1 ? 'md:col-start-1' : ''}>
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4">{category.title}</h2>
-                  <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-gray-800 mb-3">Benefits:</h4>
-                    <ul className="space-y-2 mb-4">
-                      {category.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="flex items-start space-x-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span className="text-gray-700">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-primary font-semibold">Popular items: {category.items.join(", ")}</p>
+              <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="p-8 md:p-12">
+                    <h2 className="text-3xl font-bold text-gray-800 mb-4">{category.title}</h2>
+                    <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-gray-800 mb-3">Benefits:</h4>
+                      <ul className="space-y-2 mb-4">
+                        {category.benefits.map((benefit, benefitIndex) => (
+                          <li key={benefitIndex} className="flex items-start space-x-2">
+                            <span className="text-primary mt-1">•</span>
+                            <span className="text-gray-700">{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="text-primary font-semibold">Popular items: {category.items.join(", ")}</p>
+                    </div>
+                    <button
+                      onClick={handleEnquiry}
+                      className="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
+                    >
+                      Enquire Now
+                    </button>
                   </div>
-                  <button
-                    onClick={handleEnquiry}
-                    className="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors duration-300 font-medium uppercase"
-                  >
-                    Enquire Now
-                  </button>
+                  <div 
+                    className="h-full min-h-[400px] bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url('${category.image}')`,
+                    }}
+                  ></div>
                 </div>
               </div>
             ))}
