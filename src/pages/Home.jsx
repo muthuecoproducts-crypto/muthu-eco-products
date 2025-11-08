@@ -92,11 +92,11 @@ const Home = () => {
               <h3 className="text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Supporting local and sustainable agriculture</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
               <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Free from chemicals, powered only by nature’s pure ingredients</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
               <h3 className="text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Real flavor of native Tamil Nadu produce</p>
             </div>
