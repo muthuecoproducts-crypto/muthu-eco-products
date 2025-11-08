@@ -25,7 +25,7 @@ const Navbar = () => {
               />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-bold text-gray-800">
-                  Muthu Eco Products
+                  Muthu Organic Products
                 </span>
                 <span className="text-xs text-gray-500 font-medium tracking-wide">
                   Sustainable Solutions

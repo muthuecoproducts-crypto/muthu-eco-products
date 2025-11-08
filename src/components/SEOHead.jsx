@@ -8,7 +8,7 @@ const SEOHead = ({
   url = "https://muthu-eco-products.vercel.app",
   type = "website"
 }) => {
-  const fullTitle = title ? `${title} | Muthu Eco Products` : "Muthu Eco Products - 100% Organic Food | Chemical-Free Grains & Millets Chennai"
+  const fullTitle = title ? `${title} | Muthu Organic Products` : "Muthu Organic Products - 100% Organic Food | Chemical-Free Grains & Millets Chennai"
   
   return (
     <Helmet>
