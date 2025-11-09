@@ -15,11 +15,11 @@ body {
 
 /* Professional Button Styles */
 .btn-primary {
-  @apply bg-gradient-to-r from-[#16a093] to-[#117964] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
+  @apply bg-gradient-to-r from-[#ec4899] to-[#f472b6] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#ec4899]/30;
 }
 
 .btn-secondary {
-  @apply bg-white text-[#16a093] border-2 border-[#16a093] px-8 py-3 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:bg-[#16a093] hover:text-white hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
+  @apply bg-white text-[#ec4899] border-2 border-[#ec4899] px-8 py-3 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:bg-[#ec4899] hover:text-white hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#ec4899]/30;
 }
 
 /* Professional Card Styles */
@@ -51,9 +51,9 @@ body {
 
 .hero-gradient {
   background: linear-gradient(
-    135deg,
-    rgba(22, 160, 147, 0.9) 0%,
-    rgba(17, 121, 100, 0.9) 100%
+    to top right,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(236, 72, 153, 0.8) 100%
   );
 }
 
@@ -74,7 +74,7 @@ body {
 
 /* Enhanced Focus States */
 .focus-ring {
-  @apply focus:outline-none focus:ring-4 focus:ring-[#16a093]/30;
+  @apply focus:outline-none focus:ring-4 focus:ring-[#ec4899]/30;
 }
 
 /* Animations */
@@ -129,7 +129,7 @@ body {
 }
 
 .top-bar {
-  @apply bg-gradient-to-r from-[#16a093] to-[#117964] text-white;
+  @apply bg-gradient-to-r from-[#ec4899] to-[#f472b6] text-white;
 }
 
 .navbar-glass {
@@ -137,7 +137,7 @@ body {
 }
 
 .logo-icon {
-  @apply w-12 h-12 bg-gradient-to-br from-[#16a093] to-[#117964] rounded-xl flex items-center justify-center shadow-lg transition-all duration-300;
+  @apply w-12 h-12 bg-gradient-to-br from-[#ec4899] to-[#f472b6] rounded-xl flex items-center justify-center shadow-lg transition-all duration-300;
 }
 
 .logo-icon:hover {
@@ -145,11 +145,11 @@ body {
 }
 
 .nav-link {
-  @apply text-gray-700 hover:text-[#16a093] font-semibold transition-all duration-300 relative py-2;
+  @apply text-gray-700 hover:text-[#ec4899] font-semibold transition-all duration-300 relative py-2;
 }
 
 .nav-link::after {
-  @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-[#16a093] transition-all duration-300;
+  @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ec4899] transition-all duration-300;
   content: '';
 }
 
