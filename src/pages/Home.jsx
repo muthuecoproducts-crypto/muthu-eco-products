@@ -100,27 +100,27 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="section-title">🥣 Our Promise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
               <div className="text-4xl mb-3">🌾</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Certified and verified for purity</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
               <div className="text-4xl mb-3">🌱</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Supporting local and sustainable agriculture</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
               <div className="text-4xl mb-3">💚</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals or Preservatives</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Just natural goodness</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
               <div className="text-4xl mb-3">🍚</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Experience the real flavor of native Tamil Nadu produce</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
               <div className="text-4xl mb-3">♻️</div>
               <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Eco-Friendly Packaging</h3>
               <p className="text-professional text-xs sm:text-sm">Because health and nature go hand in hand</p>
@@ -137,25 +137,25 @@ const Home = () => {
             We stand out in the organic food industry through our commitment to excellence
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Quality Assured</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">Rigorous quality checks and certifications</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Farm Direct</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">No middlemen, direct from trusted farms</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Safe Packaging</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">Eco-friendly and secure packaging</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Satisfaction</h3>
               </div>
