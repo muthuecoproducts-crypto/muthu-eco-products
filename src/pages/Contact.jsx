@@ -21,11 +21,11 @@ const Contact = () => {
         style={{ backgroundImage: "url('/images/organic.png')" }}
       >
         <div className="absolute inset-0 hero-gradient"></div>
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight animate-slide-up">
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight animate-slide-up text-gray-800">
             Contact Us
           </h1>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 leading-relaxed animate-slide-up px-2">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 leading-relaxed animate-slide-up px-2 text-gray-700">
             Get in touch with us for any queries about our organic products or to place an order
           </p>
           <a

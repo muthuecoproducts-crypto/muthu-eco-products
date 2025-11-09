@@ -31,11 +31,11 @@ const Home = () => {
         style={{ backgroundImage: "url('/images/organic.png')" }}
       >
         <div className="absolute inset-0 hero-gradient"></div>
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in">
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in text-gray-800">
             Wholesome. Honest. Homegrown.
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-10 leading-relaxed animate-slide-up px-2">
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-10 leading-relaxed animate-slide-up px-2 text-gray-700">
             Welcome to Muthu Eco Products — your trusted source for pure, organic essentials. From farm-fresh grains to traditional spices, we bring you food that's as real as nature intended — free from chemicals, full of goodness.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up px-4">
