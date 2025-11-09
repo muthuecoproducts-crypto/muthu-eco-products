@@ -57,29 +57,29 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center space-x-8">
               <Link to="/" className={`font-semibold transition-all duration-300 relative py-2 ${
                 location.pathname === '/' 
-                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
-                  : 'text-gray-700 hover:text-[#16a093]'
+                  ? 'text-pink-500 border-b-2 border-pink-500' 
+                  : 'text-gray-700 hover:text-pink-500'
               }`}>
                 Home
               </Link>
               <Link to="/products" className={`font-semibold transition-all duration-300 relative py-2 ${
                 location.pathname === '/products' 
-                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
-                  : 'text-gray-700 hover:text-[#16a093]'
+                  ? 'text-pink-500 border-b-2 border-pink-500' 
+                  : 'text-gray-700 hover:text-pink-500'
               }`}>
                 Products
               </Link>
               <Link to="/about" className={`font-semibold transition-all duration-300 relative py-2 ${
                 location.pathname === '/about' 
-                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
-                  : 'text-gray-700 hover:text-[#16a093]'
+                  ? 'text-pink-500 border-b-2 border-pink-500' 
+                  : 'text-gray-700 hover:text-pink-500'
               }`}>
                 About
               </Link>
               <Link to="/contact" className={`font-semibold transition-all duration-300 relative py-2 ${
                 location.pathname === '/contact' 
-                  ? 'text-[#16a093] border-b-2 border-[#16a093]' 
-                  : 'text-gray-700 hover:text-[#16a093]'
+                  ? 'text-pink-500 border-b-2 border-pink-500' 
+                  : 'text-gray-700 hover:text-pink-500'
               }`}>
                 Contact
               </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
               to="/"
               onClick={() => setIsOpen(false)}
               className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
-                location.pathname === '/' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+                location.pathname === '/' ? 'text-pink-500 underline decoration-2 underline-offset-4' : 'text-gray-700'
               }`}
             >
               Home
@@ -123,7 +123,7 @@ const Navbar = () => {
               to="/products"
               onClick={() => setIsOpen(false)}
               className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
-                location.pathname === '/products' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+                location.pathname === '/products' ? 'text-pink-500 underline decoration-2 underline-offset-4' : 'text-gray-700'
               }`}
             >
               Products
@@ -132,7 +132,7 @@ const Navbar = () => {
               to="/about"
               onClick={() => setIsOpen(false)}
               className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
-                location.pathname === '/about' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+                location.pathname === '/about' ? 'text-pink-500 underline decoration-2 underline-offset-4' : 'text-gray-700'
               }`}
             >
               About
@@ -141,7 +141,7 @@ const Navbar = () => {
               to="/contact"
               onClick={() => setIsOpen(false)}
               className={`block px-4 py-3 font-semibold rounded-xl transition-all duration-300 bg-white hover:bg-pink-100 ${
-                location.pathname === '/contact' ? 'text-[#16a093] underline decoration-2 underline-offset-4' : 'text-gray-700'
+                location.pathname === '/contact' ? 'text-pink-500 underline decoration-2 underline-offset-4' : 'text-gray-700'
               }`}
             >
               Contact

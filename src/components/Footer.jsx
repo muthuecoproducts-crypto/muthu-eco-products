@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-lg transition-colors duration-300"
+                className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-lg transition-colors duration-300"
               >
                 Submit
               </button>
@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Company Info & Links */}
           <div className="space-y-6 sm:space-y-8">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">Muthu Organic Products</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-pink-200 mb-4 sm:mb-6">Muthu Organic Products</h3>
               <p className="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                 Your trusted partner for pure, organic living. We bring you the finest organic food items 
                 sourced directly from trusted farms for healthy, sustainable living.
@@ -51,10 +51,10 @@ const Footer = () => {
               <div>
                 <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Quick Links</h4>
                 <div className="space-y-2 sm:space-y-3">
-                  <a href="/" className="block text-gray-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">Home</a>
-                  <a href="/about" className="block text-gray-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">About Us</a>
-                  <a href="/products" className="block text-gray-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">Products</a>
-                  <a href="/contact" className="block text-gray-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">Contact</a>
+                  <a href="/" className="block text-gray-300 hover:text-pink-400 transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">Home</a>
+                  <a href="/about" className="block text-gray-300 hover:text-pink-400 transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">About Us</a>
+                  <a href="/products" className="block text-gray-300 hover:text-pink-400 transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">Products</a>
+                  <a href="/contact" className="block text-gray-300 hover:text-pink-400 transition-colors duration-300 hover:translate-x-1 transform text-sm sm:text-base">Contact</a>
                 </div>
               </div>
               
@@ -93,9 +93,9 @@ const Footer = () => {
               © 2024 Muthu Organic Products. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400">
-              <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
-              <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
-              <a href="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</a>
+              <a href="/privacy-policy" className="hover:text-pink-400 transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" className="hover:text-pink-400 transition-colors">Terms of Service</a>
+              <a href="/shipping-policy" className="hover:text-pink-400 transition-colors">Shipping Policy</a>
             </div>
           </div>
         </div>
