@@ -22,24 +22,6 @@ const Home = () => {
     }
   ]
 
-  const productHighlights = [
-    {
-      title: "Organic Grains",
-      image: "/images/grains.png",
-      description: "Chemical-free grains sourced directly from trusted farms"
-    },
-    {
-      title: "Native Millets",
-      image: "/images/image.png",
-      description: "Nutritious millets packed with health benefits"
-    },
-    {
-      title: "Natural Spices",
-      image: "/images/spices.png",
-      description: "Pure spices that retain authentic taste and aroma"
-    }
-  ]
-
   return (
     <div className="pt-18">
 
@@ -51,20 +33,17 @@ const Home = () => {
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in">
-            Pure. Fresh. 100% Organic.
+            Wholesome. Honest. Homegrown.
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-10 leading-relaxed animate-slide-up px-2">
-            From our trusted farms to your plate — experience food that's good for you and the planet.
-          </p>
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-10 leading-relaxed animate-slide-up opacity-90 px-2">
-            We bring you the purest grains, millets, spices, and essentials — all grown naturally, free from harmful chemicals. Every product carries the love of the land and the honesty of our farmers.
+            Welcome to Muthu Eco Products — your trusted source for pure, organic essentials. From farm-fresh grains to traditional spices, we bring you food that's as real as nature intended — free from chemicals, full of goodness.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up px-4">
             <Link 
               to="/products" 
               className="btn-primary inline-block text-center"
             >
-              Explore Our Products
+              Explore Our Range
             </Link>
             <Link 
               to="/about" 
@@ -76,33 +55,75 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Nature's Best Section */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="section-title">Nature's Best, Packed with Care.</h2>
+          <p className="section-subtitle max-w-3xl mx-auto">
+            Discover our complete range of naturally grown rice, millets, pulses, flours, spices, and healthy mixes — all sourced directly from local organic farms. Pure taste, rich nutrition, and eco-friendly packaging in every pack.
+          </p>
+          <Link 
+            to="/products" 
+            className="btn-primary inline-block mt-6"
+          >
+            View All Products
+          </Link>
+        </div>
+      </section>
+
+      {/* Bulk Supply Section */}
+      <section className="section-padding gradient-bg">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="section-title">Fresh Idly & Dosa Batter for Bulk Supply</h2>
+          <p className="section-subtitle max-w-3xl mx-auto">
+            Supplying freshly prepared, preservative-free Idly and Dosa batter made from native rice varieties — perfect for restaurants, caterers, and organic stores. Consistency, purity, and authentic flavor guaranteed.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+            <Link 
+              to="/contact" 
+              className="btn-primary inline-block"
+            >
+              Enquire for Bulk Orders
+            </Link>
+            <Link 
+              to="/contact" 
+              className="btn-secondary inline-block"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Our Promise */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="section-title">Our Promise</h2>
-          <p className="section-subtitle">
-            We value quality over quantity — ensuring that what reaches your kitchen is as pure as nature made it.
-          </p>
+          <h2 className="section-title">🥣 Our Promise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+              <div className="text-4xl mb-3">🌾</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Certified and verified for purity</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+              <div className="text-4xl mb-3">🌱</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Direct from Farmers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Supporting local and sustainable agriculture</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Free from chemicals, powered only by nature’s pure ingredients</p>
+              <div className="text-4xl mb-3">💚</div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">No Chemicals or Preservatives</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Just natural goodness</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+              <div className="text-4xl mb-3">🍚</div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Authentic Taste</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Real flavor of native Tamil Nadu produce</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Experience the real flavor of native Tamil Nadu produce</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
-              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Eco-Friendly</h3>
-              <p className="text-professional text-xs sm:text-sm">Health and nature go hand in hand</p>
+              <div className="text-4xl mb-3">♻️</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">Eco-Friendly Packaging</h3>
+              <p className="text-professional text-xs sm:text-sm">Because health and nature go hand in hand</p>
             </div>
           </div>
         </div>
@@ -118,28 +139,24 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                {/* <div className="w-12 h-1 bg-primary rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Quality Assured</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">Rigorous quality checks and certifications</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                {/* <div className="w-12 h-1 bg-secondary rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Farm Direct</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">No middlemen, direct from trusted farms</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                {/* <div className="w-12 h-1 bg-accent rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Safe Packaging</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">Eco-friendly and secure packaging</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-all duration-300 group">
               <div className="mb-4">
-                {/* <div className="w-12 h-1 bg-primary rounded-full mb-3"></div> */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Satisfaction</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">100% customer satisfaction guarantee</p>
@@ -162,11 +179,6 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-10">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="card card-hover p-8 text-center relative">
-                {/* <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl">
-                    "
-                  </div>
-                </div> */}
                 <div className="flex justify-center mb-6 mt-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <span key={i} className="text-accent text-2xl">★</span>
