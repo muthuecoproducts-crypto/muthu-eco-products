@@ -84,17 +84,25 @@ const Home = () => {
       <section className="section-padding gradient-bg">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-8">
-            <div className="text-center md:text-left flex-1">
+            <div className="text-center md:text-right flex-1">
               <h2 className="section-title">Fresh Idly & Dosa Batter for Bulk Supply</h2>
-              <p className="section-subtitle max-w-3xl md:mx-0 mx-auto">
+              <p className="section-subtitle max-w-3xl md:mx-0 md:ml-auto mx-auto">
                 Supplying freshly prepared, preservative-free Idly and Dosa batter made from native rice varieties — perfect for restaurants, caterers, and organic stores. Consistency, purity, and authentic flavor guaranteed.
               </p>
-              <Link 
-                to="/contact" 
-                className="btn-primary inline-block mt-6"
-              >
-                Enquire for Bulk Orders
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 md:justify-end justify-center mt-6">
+                <Link 
+                  to="/contact" 
+                  className="btn-primary inline-block"
+                >
+                  Enquire for Bulk Orders
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="btn-secondary inline-block"
+                >
+                  Contact Us
+                </Link>
+              </div>
             </div>
             <img 
               src="/images/imag.png" 
