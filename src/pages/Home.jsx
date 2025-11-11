@@ -57,17 +57,26 @@ const Home = () => {
 
       {/* Nature's Best Section */}
       <section className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="section-title">Nature's Best, Packed with Care.</h2>
-          <p className="section-subtitle max-w-3xl mx-auto">
-            Discover our complete range of naturally grown rice, millets, pulses, flours, spices, and healthy mixes — all sourced directly from local organic farms. Pure taste, rich nutrition, and eco-friendly packaging in every pack.
-          </p>
-          <Link 
-            to="/products" 
-            className="btn-primary inline-block mt-6"
-          >
-            View All Products
-          </Link>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center gap-8">
+            <img 
+              src="/images/home.png" 
+              alt="Organic Products" 
+              className="w-64 h-64 rounded-full object-cover flex-shrink-0 hidden md:block"
+            />
+            <div className="text-center md:text-left flex-1">
+              <h2 className="section-title">Nature's Best, Packed with Care.</h2>
+              <p className="section-subtitle max-w-3xl md:mx-0 mx-auto">
+                Discover our complete range of naturally grown rice, millets, pulses, flours, spices, and healthy mixes — all sourced directly from local organic farms. Pure taste, rich nutrition, and eco-friendly packaging in every pack.
+              </p>
+              <Link 
+                to="/products" 
+                className="btn-primary inline-block mt-6"
+              >
+                View All Products
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
