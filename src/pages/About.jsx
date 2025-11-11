@@ -3,8 +3,8 @@ const About = () => {
     <div className="pt-0">
       {/* Hero Section */}
       <section 
-        className="min-h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/images/organic.png')" }}
+        className="min-h-[75vh] bg-no-repeat flex items-center justify-center relative"
+        style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 500px', backgroundPosition: 'right center' }}
       >
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
@@ -48,7 +48,7 @@ const About = () => {
               <img 
                 src="/images/home.png" 
                 alt="Our Story" 
-                className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg"
+                className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ const About = () => {
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
               
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Mission</h3>
               <p className="text-gray-600 text-sm sm:text-base px-2">
@@ -68,7 +68,7 @@ const About = () => {
                 and responsible farmers, ensuring quality and authenticity in every product.
               </p>
             </div>
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
               
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Vision</h3>
               <p className="text-gray-600 text-sm sm:text-base px-2">
@@ -88,23 +88,23 @@ const About = () => {
           <p className="text-center text-gray-600 mb-8 text-lg">Because we don't just sell food — we sell trust.</p>
           <p className="text-center text-gray-600 mb-12">At Muthu, every grain, every spice, and every drop of oil comes with our personal promise of purity.</p>
           <div className="grid md:grid-cols-5 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Certified FSSAI</h3>
               <p className="text-gray-600 text-sm">No. 22419534000178</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Trusted Network</h3>
               <p className="text-gray-600 text-sm">Of organic farmers</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Locally Owned</h3>
               <p className="text-gray-600 text-sm">& ethically run</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Transparent</h3>
               <p className="text-gray-600 text-sm">Pricing and quality</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Tamil Nadu's Taste</h3>
               <p className="text-gray-600 text-sm">The organic way!</p>
             </div>
@@ -116,7 +116,7 @@ const About = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Visit Us</h2>
-          <div className="bg-white p-8 rounded-xl shadow-lg">
+          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
             <div className="space-y-4 text-left">
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">📍 Address:</h3>

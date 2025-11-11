@@ -17,8 +17,8 @@ const Contact = () => {
 
       {/* Hero Section */}
       <section 
-        className="min-h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/images/organic.png')" }}
+        className="min-h-[75vh] bg-no-repeat flex items-center justify-center relative"
+        style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 500px', backgroundPosition: 'right center' }}
       >
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
@@ -43,7 +43,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div id="contact-form">
-              <div className="bg-white p-8 rounded-2xl shadow-xl">
+              <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
                 <ContactForm />
               </div>
@@ -52,10 +52,10 @@ const Contact = () => {
             {/* Contact Information & Map */}
             <div className="space-y-8">
               {/* Contact Info */}
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6">Get In Touch</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
                     <div className="text-primary text-xl">📍</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">Address</h4>
@@ -67,7 +67,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
                     <div className="text-primary text-xl">📞</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">Phone</h4>
@@ -75,7 +75,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
                     <div className="text-primary text-xl">✉️</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">Email</h4>
