@@ -114,21 +114,24 @@ const Products = () => {
                   backgroundPosition: 'center'
                 }}
               >
+                <div className="absolute top-1/2 right-8 transform -translate-y-1/2 w-64 h-64 bg-pink-400 text-white rounded-full flex items-center justify-center text-8xl font-bold shadow-lg hidden md:flex">
+                  {index + 1}
+                </div>
                 <div className="p-8 md:p-12 max-w-2xl">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4">{category.title}</h2>
-                  <p className="text-gray-700 mb-6 text-lg">{category.description}</p>
+                  <h2 className="text-3xl font-bold text-green-600 mb-4">{category.title}</h2>
+                  <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
                   <div className="mb-6">
-                    <h4 className="font-semibold text-gray-800 mb-3">Benefits:</h4>
+                    <h4 className="font-semibold text-yellow-600 mb-3">Benefits:</h4>
                     <ul className="space-y-2 mb-4">
                       {category.benefits.map((benefit, benefitIndex) => (
                         <li key={benefitIndex} className="flex items-start space-x-2">
-                          <span className="text-primary mt-1">●</span>
-                          <span className="text-gray-700">{benefit}</span>
+                          <span className="text-yellow-600 mt-1">●</span>
+                          <span className="text-gray-600">{benefit}</span>
                         </li>
                       ))}
                     </ul>
-                    <h4 className="font-semibold text-gray-800 mb-2">Varieties:</h4>
-                    <p className="text-gray-700 text-sm">{category.items.join(", ")}</p>
+                    <h4 className="font-semibold text-yellow-600 mb-2">Varieties:</h4>
+                    <p className="text-gray-600 text-sm">{category.items.join(", ")}</p>
                   </div>
                   <button
                     onClick={handleEnquiry}
