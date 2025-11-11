@@ -60,9 +60,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-8">
             <img 
-              src="/images/home.png" 
+              src="/images/packaging.png" 
               alt="Organic Products" 
-              className="w-72 h-72 rounded-full object-cover flex-shrink-0 hidden md:block"
+              className="w-80 h-80 rounded-full object-cover flex-shrink-0 hidden md:block"
             />
             <div className="text-center md:text-left flex-1">
               <h2 className="section-title">Nature's Best, Packed with Care.</h2>
@@ -97,7 +97,7 @@ const Home = () => {
               </Link>
             </div>
             <img 
-              src="/images/home.png" 
+              src="/images/imag.png" 
               alt="Idly Dosa Batter" 
               className="w-96 h-96 rounded-full object-cover flex-shrink-0 hidden md:block"
             />
@@ -191,7 +191,7 @@ const Home = () => {
               <div key={index} className="card card-hover p-8 text-center relative">
                 <div className="flex justify-center mb-6 mt-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-accent text-2xl">★</span>
+                    <span key={i} className="text-yellow-500 text-2xl">★</span>
                   ))}
                 </div>
                 <p className="text-professional text-lg mb-6 italic leading-relaxed">
