@@ -28,7 +28,7 @@ const Home = () => {
       {/* Hero Section */}
       <section 
         className="min-h-[95vh] bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 650px', backgroundPosition: 'right center' }}
+        style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 70vh', backgroundPosition: 'right center' }}
       >
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
