@@ -3,10 +3,10 @@ const About = () => {
     <div className="pt-0">
       {/* Hero Section */}
       <section 
-        className="min-h-[75vh] bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 70vh', backgroundPosition: 'right center' }}
+        className="min-h-[75vh] flex items-center justify-center relative"
       >
         <div className="absolute inset-0 hero-gradient"></div>
+        <div className="absolute inset-0 bg-no-repeat pointer-events-none" style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 55vh', backgroundPosition: 'right center' }}></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight animate-slide-up text-gray-800">
             About Us
