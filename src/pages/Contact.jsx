@@ -21,7 +21,7 @@ const Contact = () => {
       >
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="absolute inset-0 bg-no-repeat pointer-events-none" style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 55vh', backgroundPosition: 'right 15vh' }}></div>
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
+        {/* <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight animate-slide-up text-gray-800">
             Contact Us
           </h1>
@@ -31,6 +31,23 @@ const Contact = () => {
           <a
             href="#contact-form"
             className="btn-primary inline-block animate-slide-up"
+          >
+            Contact Us
+          </a>
+        </div> */}
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
+          <span className="inline-block text-sm font-medium text-primary mb-3 tracking-wider">
+            LET'S CONNECT
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-800">
+            Get In <span className="text-primary">Touch</span>
+          </h1>
+          <p className="text-lg sm:text-xl mb-8 leading-relaxed px-4 text-gray-700 max-w-2xl mx-auto">
+            Get in touch with us for any queries about our organic products or to place an order
+          </p>
+          <a
+            href="#contact-form"
+            className="btn-primary"
           >
             Contact Us
           </a>
