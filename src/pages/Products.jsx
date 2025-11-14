@@ -135,13 +135,13 @@ const Products = () => {
                     <div className={`flex flex-col ${isOdd ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 p-8`}>
                       {/* Image Section */}
                       <div className="flex-1 relative">
-                        <div className={`relative rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-700 ${
+                        <div className={`relative rounded-full overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-700 w-[450px] h-[450px] mx-auto ${
                           !imageLoaded ? 'bg-gray-200 animate-pulse' : ''
                         }`}>
                           <img 
                             src={category.image} 
                             alt={category.title}
-                            className={`w-full h-[500px] object-cover transition-all duration-700 ${
+                            className={`w-full h-full object-cover transition-all duration-700 ${
                               imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                             }`}
                             onLoad={() => handleImageLoad(index)}
@@ -151,9 +151,7 @@ const Products = () => {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                           
                           {/* Floating badge */}
-                          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg transform -translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                            <span className="text-sm font-semibold text-green-700">🌱 Organic</span>
-                          </div>
+                         
                         </div>
                       </div>
 
@@ -166,21 +164,21 @@ const Products = () => {
                           </h2>
                         </div>
                         
-                        <p className="text-gray-600 mb-6 text-lg leading-relaxed bg-gray-50/50 p-4 rounded-xl border-l-4 border-green-300">
+                        <p className="text-gray-600 mb-4 text-base leading-snug bg-gray-50/50 p-3 rounded-xl border-l-4 border-green-300">
                           {category.description}
                         </p>
                         
-                        <div className="mb-6 space-y-4">
+                        <div className="mb-4 space-y-3">
                           <div>
-                            <h4 className="font-semibold text-yellow-600 mb-3 flex items-center gap-2">
+                            <h4 className="font-semibold text-yellow-600 mb-2 flex items-center gap-2">
                               <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
                               Benefits:
                             </h4>
-                            <ul className="space-y-2 mb-4">
+                            <ul className="space-y-1 mb-3">
                               {category.benefits.map((benefit, benefitIndex) => (
-                                <li key={benefitIndex} className="flex items-start space-x-3 group/benefit">
-                                  <span className="text-green-500 mt-1.5 text-lg flex-shrink-0">✓</span>
-                                  <span className="text-gray-600 group-hover/benefit:text-gray-800 transition-colors duration-300">
+                                <li key={benefitIndex} className="flex items-start space-x-2 group/benefit">
+                                  <span className="text-green-500 mt-0.5 text-base flex-shrink-0">✓</span>
+                                  <span className="text-gray-600 text-sm leading-tight group-hover/benefit:text-gray-800 transition-colors duration-300">
                                     {benefit}
                                   </span>
                                 </li>
@@ -193,8 +191,8 @@ const Products = () => {
                               <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
                               Varieties:
                             </h4>
-                            <div className="bg-gradient-to-r from-green-50 to-yellow-50 p-4 rounded-xl border border-green-100">
-                              <p className="text-gray-600 text-sm leading-relaxed">{category.items.join(", ")}</p>
+                            <div className="bg-gradient-to-r from-green-50 to-yellow-50 p-3 rounded-xl border border-green-100">
+                              <p className="text-gray-600 text-sm leading-snug">{category.items.join(", ")}</p>
                             </div>
                           </div>
                         </div>
