@@ -28,10 +28,11 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">Welcome to Muthu Organic Shop</h2>
-              <div className="space-y-3 sm:space-y-4 text-gray-600 text-sm sm:text-base">
-                <p>
-                  We believe that நல் உணவே அரும் ருந்து — healthy food is truly the best medicine.
+              <span className="inline-block text-sm font-medium text-green-600 mb-3 tracking-wider">OUR STORY</span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Welcome to Muthu Organic Shop</h2>
+              <div className="space-y-4 text-gray-600">
+                <p className="italic text-lg border-l-4 border-green-200 pl-4">
+                  "நல் உணவே அரும் ருந்து — healthy food is truly the best medicine."
                 </p>
                 <p>
                   Our journey began with a simple goal: to bring back purity to every kitchen. From 
@@ -42,6 +43,14 @@ const About = () => {
                   With love, honesty, and sustainability at our core, we aim to make clean eating easy, 
                   affordable, and oh-so-delicious! 🌿
                 </p>
+              </div>
+              <div className="mt-8">
+                <a href="/products" className="text-green-600 hover:text-green-700 font-medium flex items-center group">
+                  Explore Our Products 
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </a>
               </div>
             </div>
             <div>

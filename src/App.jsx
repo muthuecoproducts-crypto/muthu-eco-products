@@ -10,6 +10,7 @@ import ShippingPolicy from './pages/ShippingPolicy'
 import WhatsAppFloat from './components/WhatsAppFloat'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop';
+import DummyPage from './pages/dummy';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/shipping-policy" element={<ShippingPolicy />} />
+          <Route path='/dummy' element={<DummyPage />} />
         </Routes>
         <Footer />
         <WhatsAppFloat />
