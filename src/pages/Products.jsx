@@ -104,7 +104,10 @@ const Products = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
-            {productCategories.map((category, index) => (
+            {productCategories.map((category, index) => {
+              const numberWords = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten']
+              const isOdd = index % 2 === 0
+              return (
               <div 
                 key={index} 
                 className="relative rounded-2xl overflow-hidden shadow-xl min-h-[500px] flex items-center hover:shadow-2xl hover:scale-105 transition-all duration-300"
@@ -114,10 +117,10 @@ const Products = () => {
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="absolute top-1/2 right-8 transform -translate-y-1/2 w-64 h-64 bg-pink-400 text-white rounded-full flex items-center justify-center text-8xl font-bold shadow-lg hidden md:flex">
-                  {index + 1}
+                <div className={`absolute top-1/2 ${isOdd ? 'right-8' : 'left-8'} transform -translate-y-1/2 w-64 h-64 bg-white-900 text-gray rounded-full flex items-center justify-center text-6xl font-bold shadow-lg hidden md:flex`}>
+                  {numberWords[index]}
                 </div>
-                <div className="p-8 md:p-12 max-w-2xl">
+                <div className={`p-8 md:p-12 max-w-2xl ${isOdd ? '' : 'ml-auto'}`}>
                   <h2 className="text-3xl font-bold text-green-600 mb-4">{category.title}</h2>
                   <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
                   <div className="mb-6">
@@ -141,7 +144,8 @@ const Products = () => {
                   </button>
                 </div>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
