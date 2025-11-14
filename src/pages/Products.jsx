@@ -105,25 +105,21 @@ const Products = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
             {productCategories.map((category, index) => {
-              const numberWords = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten']
               const isOdd = index % 2 === 0
               return (
               <div 
                 key={index} 
-                className="relative rounded-2xl overflow-hidden shadow-xl min-h-[500px] flex items-center hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-white"
+                className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                <div 
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    backgroundImage: `url('${category.image}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                ></div>
-                <div className={`absolute top-1/2 ${isOdd ? 'right-8' : 'left-8'} transform -translate-y-1/2 w-48 h-48 bg-gradient-to-br from-pink-600 to-white-900 text-white rounded-full flex items-center justify-center text-5xl font-bold shadow-2xl hidden md:flex`}>
-                  {numberWords[index]}
-                </div>
-                <div className={`p-8 md:p-12 max-w-2xl ${isOdd ? '' : 'ml-auto'}`}>
+                <div className={`flex flex-col ${isOdd ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 p-8`}>
+                  <div className="flex-1">
+                    <img 
+                      src={category.image} 
+                      alt={category.title}
+                      className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+                    />
+                  </div>
+                  <div className="flex-1">
                   <h2 className="text-3xl font-bold text-green-600 mb-4">{category.title}</h2>
                   <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
                   <div className="mb-6">
@@ -139,12 +135,13 @@ const Products = () => {
                     <h4 className="font-semibold text-yellow-600 mb-2">Varieties:</h4>
                     <p className="text-gray-600 text-sm">{category.items.join(", ")}</p>
                   </div>
-                  <button
-                    onClick={handleEnquiry}
-                    className="bg-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition-colors duration-300 font-medium uppercase shadow-lg"
-                  >
-                    Enquire Now
-                  </button>
+                    <button
+                      onClick={handleEnquiry}
+                      className="bg-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition-colors duration-300 font-medium uppercase shadow-lg"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
                 </div>
               </div>
               )
