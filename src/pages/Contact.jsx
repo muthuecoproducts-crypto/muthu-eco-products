@@ -97,7 +97,7 @@ const Contact = () => {
                 
               </div>
                {/* Quick Connect */}
-              <div className="bg-white p-6 rounded-2xl shadow-lg border-t-2 hover:shadow-xl transition-all duration-300">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border-t-2 hover:shadow-xl hover:scale-105 transition-all duration-300">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Quick Connect</h3>
                 <div className="flex flex-wrap gap-4">
                   <button 
