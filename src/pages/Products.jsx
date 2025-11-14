@@ -15,21 +15,21 @@ const Products = () => {
       description: "Our traditional rice varieties are cultivated using natural farming methods, free from chemicals or polish. Each grain carries the rich heritage and authentic taste of Tamil Nadu.",
       benefits: ["Retains bran and natural nutrients", "Easy to digest and energizing", "Great aroma and authentic texture", "Supports heart and gut health"],
       items: ["Thooyamalli (Boiled/Raw)", "Kitchili Samba (Boiled)", "Seeraga Samba (Boiled/Raw)", "Thanga Samba", "Sivan Samba", "Illupam Poo Samba (Boiled/Raw)", "Maapillai Samba", "Poongar", "Karuppu Kavuni", "Kattuyanam", "Karunguruvai", "Kullakar", "Arubadhamkuruvai", "Brown Rice", "Idli Rice"],
-      image: "/images/grains.png"
+      image: "/images/organic-rice.jpg"
     },
     {
       title: "Natural Millets",
       description: "Millets are ancient superfoods rich in fiber and minerals, ideal for modern healthy living. They're naturally gluten-free and promote sustained energy.",
       benefits: ["High in fiber and antioxidants", "Excellent for diabetic and heart-friendly diets", "Keeps you full longer and aids weight management", "Boosts immunity and metabolism"],
       items: ["Varagu", "Saamai", "Kula Saamai", "Thinai", "Kuthiraivali", "Raagi", "Naattu Kambu", "White Solam", "Red Solam"],
-      image: "/images/native-millets.png"
+      image: "/images/millets.jpg"
     },
     {
       title: "Organic Pulses",
       description: "Our organic pulses are protein-rich, unpolished, and sourced directly from trusted farmers. Perfect for everyday meals, dals, and snacks.",
       benefits: ["High in protein and fiber", "Easy to cook and digest", "Great source of energy and iron", "No artificial polish or chemicals"],
       items: ["Toor Dhal", "Gram Dhal", "White Moong Dhal", "Green Moong Dhal Whole", "White Urad Dhal", "Black Urad Dhal", "Roasted Gram", "Groundnut"],
-      image: "/images/grains.png"
+      image: "/images/Organic-Pulses.png"
     },
     {
       title: "Organic Flours",
@@ -78,7 +78,7 @@ const Products = () => {
       description: "Ready-to-cook, naturally fermented batters and mixes for authentic South Indian meals — pure, soft, and flavorful.",
       benefits: ["Fermented naturally, aids digestion", "Rich in protein and minerals", "Convenient and time-saving", "Made from traditional rice varieties"],
       items: ["Maapillai Samba Idly Batter", "Poongar Idly Batter", "Karunkuruvai Idly Batter", "Poongar Semiya Puttu", "Karuppu Kavuni Puttu Maavu"],
-      image: "/images/image copy.png"
+      image: "/images/dosa-batter.png"
     }
   ]
 
