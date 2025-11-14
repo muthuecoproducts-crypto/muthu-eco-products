@@ -100,9 +100,15 @@ const Contact = () => {
       </section>
 
       {/* Social Links */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">Follow Us</h2>
+      <section className="py-16 bg-gray-50 relative">
+        <div className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-5" 
+             style={{ backgroundImage: "url('/images/pattern-light.png')" }}></div>
+        <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
+          <span className="inline-block text-sm font-medium text-pink-600 mb-2 tracking-wider">STAY CONNECTED</span>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">Follow Us on Social Media</h2>
+          <p className="text-gray-600 max-w-xl mx-auto mb-10">
+            Stay updated with our latest products, special offers, and organic living tips by following us on social media.
+          </p>
           <div className="flex justify-center gap-6">
             <a href="https://www.facebook.com/share/17KUaMXDLG/" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full transition-all duration-300 hover:scale-110 shadow-lg">
               <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
