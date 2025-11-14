@@ -4,9 +4,19 @@ import { Link, useLocation } from 'react-router-dom'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
   const navRef = useRef(null)
   const mobileMenuRef = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -33,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav ref={navRef} className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-gradient-to-r from-white/95 via-pink-50/95 to-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-pink-100">
+    <nav ref={navRef} className={`fixed left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-gradient-to-r from-white/95 via-pink-50/95 to-white/95 backdrop-blur-md shadow-xl z-50 rounded-full border border-pink-100 transition-all duration-300 ${isScrolled ? 'top-0' : 'top-4'}`}>
         <div className="px-6">
           <div className="flex justify-between items-center h-20">
             {/* Enhanced Logo */}
