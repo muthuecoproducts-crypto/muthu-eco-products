@@ -117,7 +117,7 @@ const Products = () => {
                   backgroundPosition: 'center'
                 }}
               >
-                <div className={`absolute top-1/2 ${isOdd ? 'right-8' : 'left-8'} transform -translate-y-1/2 w-64 h-64 bg-white-900 text-gray rounded-full flex items-center justify-center text-6xl font-bold shadow-lg hidden md:flex`}>
+                <div className={`absolute top-1/2 ${isOdd ? 'right-8' : 'left-8'} transform -translate-y-1/2 w-48 h-48 bg-gradient-to-br from-pink-600 to-white-900 text-white rounded-full flex items-center justify-center text-5xl font-bold shadow-2xl hidden md:flex`}>
                   {numberWords[index]}
                 </div>
                 <div className={`p-8 md:p-12 max-w-2xl ${isOdd ? '' : 'ml-auto'}`}>
