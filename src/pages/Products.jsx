@@ -50,21 +50,21 @@ const Products = () => {
       description: "Our handpicked spices are sun-dried and freshly ground to retain their natural oils, aroma, and medicinal properties.",
       benefits: ["Enhances flavor and aroma naturally", "Packed with antioxidants", "Supports digestion and immunity", "Free from additives and colors"],
       items: ["Chilli Long", "Red Chilli Powder", "Mustard", "Pepper", "Coriander Seed", "Fenugreek", "Seeragam (Cumin)", "Sombu (Fennel)", "Cinnamon", "Cardamom", "Clove", "Garam Masala", "Curry Masala", "Sambar Powder", "Idly Powder", "Rasam Powder", "Tamarind"],
-      image: "/images/spices.png"
+      image: "/images/spice powders.jpg"
     },
     {
       title: "Rava & Mixes",
       description: "Traditional rava and instant mixes made from organic grains for quick, healthy, and tasty meals.",
       benefits: ["Quick to cook and light on digestion", "Made from natural, chemical-free grains", "Great for easy breakfast or tiffin options", "No preservatives added"],
       items: ["Traditional Rice Mixed Rava", "Adai Mix"],
-      image: "/images/flour.png"
+      image: "/images/ravai.png"
     },
     {
       title: "Aval, Noodles & Flakes",
       description: "Wholesome, ready-to-cook flakes made from traditional rice varieties — perfect for healthy snacking or light meals.",
       benefits: ["Easy to prepare and filling", "Rich in fiber and nutrients", "Naturally gluten-free", "Suitable for all ages"],
       items: ["Karunguruvai Rice Aval", "Maapillai Samba Aval", "Karuppu Kavuni Aval"],
-      image: "/images/grains.png"
+      image: "/images/aval.png"
     },
     {
       title: "Healthy Snacks",
@@ -78,7 +78,7 @@ const Products = () => {
       description: "Ready-to-cook, naturally fermented batters and mixes for authentic South Indian meals — pure, soft, and flavorful.",
       benefits: ["Fermented naturally, aids digestion", "Rich in protein and minerals", "Convenient and time-saving", "Made from traditional rice varieties"],
       items: ["Maapillai Samba Idly Batter", "Poongar Idly Batter", "Karunkuruvai Idly Batter", "Poongar Semiya Puttu", "Karuppu Kavuni Puttu Maavu"],
-      image: "/images/dosa-batter.png"
+      image: "/images/dosaa.png"
     }
   ]
 
