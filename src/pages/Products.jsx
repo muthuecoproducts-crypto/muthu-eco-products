@@ -110,13 +110,16 @@ const Products = () => {
               return (
               <div 
                 key={index} 
-                className="relative rounded-2xl overflow-hidden shadow-xl min-h-[500px] flex items-center hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                style={{
-                  backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.3) 100%), url('${category.image}')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center'
-                }}
+                className="relative rounded-2xl overflow-hidden shadow-xl min-h-[500px] flex items-center hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-white"
               >
+                <div 
+                  className="absolute inset-0 opacity-20"
+                  style={{
+                    backgroundImage: `url('${category.image}')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                ></div>
                 <div className={`absolute top-1/2 ${isOdd ? 'right-8' : 'left-8'} transform -translate-y-1/2 w-48 h-48 bg-gradient-to-br from-pink-600 to-white-900 text-white rounded-full flex items-center justify-center text-5xl font-bold shadow-2xl hidden md:flex`}>
                   {numberWords[index]}
                 </div>
