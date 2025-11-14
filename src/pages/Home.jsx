@@ -30,7 +30,7 @@ const Home = () => {
         className="min-h-[95vh] flex items-center justify-center relative"
       >
         <div className="absolute inset-0 hero-gradient"></div>
-        <div className="absolute inset-0 bg-no-repeat pointer-events-none" style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 70vh', backgroundPosition: 'right 17vh' }}></div>
+        <div className="absolute inset-0 bg-no-repeat pointer-events-none max-md:opacity-50" style={{ backgroundImage: "url('/images/organic.png')", backgroundSize: 'auto 70vh', backgroundPosition: 'right 17vh' }}></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in text-gray-800">
             Wholesome. Honest. Homegrown.
