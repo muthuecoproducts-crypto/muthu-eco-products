@@ -47,18 +47,18 @@ const Navbar = () => {
         <div className="px-6">
           <div className="flex justify-between items-center h-20">
             {/* Enhanced Logo */}
-            <Link to="/" className="flex items-center space-x-3 group">
+            <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group">
               <img 
                 src="/images/MEP logo.png" 
                 alt="MEP Logo" 
-                className="w-12 h-12 object-contain group-hover:scale-105 transition-all duration-300"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain group-hover:scale-105 transition-all duration-300"
               />
               <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold text-gray-800">
+                <span className="text-sm sm:text-base md:text-xl lg:text-2xl font-bold text-gray-800">
                   Muthu Organic Products
                 </span>
-                <span className="text-xs text-gray-500 font-medium tracking-wide leading-tight">
-                  We are the retailers of traditional,natural and organic groceries
+                <span className="text-[0.65rem] sm:text-xs text-gray-500 font-medium tracking-tight leading-tight">
+                  We are the retailers of traditional,<br />natural and organic groceries
                 </span>
               </div>
             </Link>
