@@ -57,8 +57,8 @@ const Navbar = () => {
                 <span className="text-xl md:text-2xl font-bold text-gray-800">
                   Muthu Organic Products
                 </span>
-                <span className="text-xs text-gray-500 font-medium tracking-wide">
-                  Natural, Organic, Traditional
+                <span className="text-xs text-gray-500 font-medium tracking-wide leading-tight">
+                  We are the retailers of traditional,natural and organic groceries
                 </span>
               </div>
             </Link>

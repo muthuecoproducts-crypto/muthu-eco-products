@@ -36,7 +36,7 @@ const Home = () => {
             Wholesome. Honest. Homegrown.
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-10 leading-relaxed animate-slide-up px-2 text-gray-700">
-            Welcome to Muthu Eco Products — your trusted source for pure, organic essentials. From farm-fresh grains to traditional spices, we bring you food that's as real as nature intended — free from chemicals, full of goodness.
+            Welcome to Muthu Eco Products — your trusted source for pure, natural essentials. From farm-fresh grains to traditional spices, we bring you food that's as real as nature intended — free from chemicals, full of goodness.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up px-4">
             <Link 
@@ -67,7 +67,7 @@ const Home = () => {
             <div className="text-center md:text-left flex-1">
               <h2 className="section-title">Nature's Best, Packed with Care.</h2>
               <p className="section-subtitle max-w-3xl md:mx-0 mx-auto">
-                Discover our complete range of naturally grown rice, millets, pulses, flours, spices, and healthy mixes — all sourced directly from local organic farms. Pure taste, rich nutrition, and eco-friendly packaging in every pack.
+                Discover our complete range of naturally grown traditional rice, millets, pulses, flours, spices, and healthy mixes — all sourced directly from local organic farms. Pure taste, rich nutrition, and eco-friendly packaging in every pack.
               </p>
               <Link 
                 to="/products" 
@@ -85,7 +85,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-8">
             <div className="text-center md:text-right flex-1">
-              <h2 className="section-title">Fresh Idly & Dosa Batter for Bulk Supply</h2>
+              <h2 className="section-title">Fresh Idly & Dosa Batter made from Traditional rice for Bulk Supply</h2>
               <p className="section-subtitle max-w-3xl md:mx-0 md:ml-auto mx-auto">
                 Supplying freshly prepared, preservative-free Idly and Dosa batter made from native rice varieties — perfect for restaurants, caterers, and organic stores. Consistency, purity, and authentic flavor guaranteed.
               </p>
@@ -120,8 +120,8 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <div className="text-4xl mb-3">🌾</div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">100% Organic</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Certified and verified for purity</p>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">100% Natural,Traditional</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Certified and verified for purity & Organic</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <div className="text-4xl mb-3">🌱</div>
@@ -152,7 +152,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="section-title">Why Choose Us</h2>
           <p className="section-subtitle">
-            We stand out in the organic food industry through our commitment to excellence
+            We stand out in the traditional and natural food industry through our commitment to excellence
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
