@@ -88,9 +88,20 @@ As proud retailers of Traditional, Natural & Organic products, we offer only wha
           <div className="flex items-center gap-8">
             <div className="text-center md:text-right flex-1">
               <h2 className="section-title">Fresh Idly & Dosa Batter made from Traditional rice for Bulk Supply</h2>
-              <p className="section-subtitle max-w-3xl md:mx-0 md:ml-auto mx-auto">
-                Supplying freshly prepared, preservative-free Idly and Dosa batter made from native rice varieties — perfect for restaurants, caterers, and organic stores. Consistency, purity, and authentic flavor guaranteed.
-              </p>
+              <ul className="max-w-3xl md:mx-0 md:ml-auto mx-auto text-left md:text-right space-y-2 mb-6">
+                <li className="text-gray-700 text-lg flex items-center md:justify-end justify-center">
+                  <span className="text-green-600 mr-2">✓</span> Poongar Idly / Dosa batter
+                </li>
+                <li className="text-gray-700 text-lg flex items-center md:justify-end justify-center">
+                  <span className="text-green-600 mr-2">✓</span> Maapillai Samba Idly / Dosa batter
+                </li>
+                <li className="text-gray-700 text-lg flex items-center md:justify-end justify-center">
+                  <span className="text-green-600 mr-2">✓</span> Karunkuruvai Samba Idly / Dosa batter
+                </li>
+                <li className="text-gray-700 text-lg flex items-center md:justify-end justify-center">
+                  <span className="text-green-600 mr-2">✓</span> Multigrains Dosa batter
+                </li>
+              </ul>
               <div className="flex flex-col sm:flex-row gap-4 md:justify-end justify-center mt-6">
                 <Link 
                   to="/contact" 
