@@ -29,7 +29,7 @@ const Contact = () => {
             Get In <span className="text-primary">Touch</span>
           </h1>
           <p className="text-lg sm:text-xl mb-8 leading-relaxed px-4 text-gray-700 max-w-2xl mx-auto">
-            Get in touch with us for any queries about our organic products or to place an order
+            Get in touch with us for any queries about our traditional, natural and organic products or to place an order
           </p>
           <a
             href="#contact-form"

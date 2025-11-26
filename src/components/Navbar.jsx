@@ -55,7 +55,7 @@ const Navbar = () => {
               />
               <div className="flex flex-col">
                 <span className="text-sm sm:text-base md:text-xl lg:text-2xl font-bold text-gray-800">
-                  Muthu Organic Products
+                  Muthu Eco Products
                 </span>
                 <span className="text-[0.65rem] sm:text-xs text-gray-500 font-medium tracking-tight leading-tight">
                   We are the retailers of traditional,<br />natural and organic groceries

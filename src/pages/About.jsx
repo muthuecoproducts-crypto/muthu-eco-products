@@ -32,12 +32,12 @@ const About = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Welcome to Muthu Organic Shop</h2>
               <div className="space-y-4 text-gray-600">
                 <p className="italic text-lg border-l-4 border-green-200 pl-4">
-                  "நல் உணவே அரும் ருந்து — healthy food is truly the best medicine."
+                  "நல் உணவே அரு மருந்து. — healthy food is truly the best medicine."
                 </p>
                 <p>
                   Our journey began with a simple goal: to bring back purity to every kitchen. From 
                   chemical-free grains and wholesome millets to aromatic spices and cold-pressed oils, 
-                  every product you see here comes straight from trusted organic farms.
+                  every product you see here comes straight from trusted natural farms.
                 </p>
                 <p>
                   With love, honesty, and sustainability at our core, we aim to make clean eating easy, 
@@ -72,7 +72,7 @@ const About = () => {
               
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Mission</h3>
               <p className="text-gray-600 text-sm sm:text-base px-2">
-                To provide pure, organic food products that promote healthy living while supporting 
+                To provide pure, natural ,traditional and  organic food products that promote healthy living while supporting 
                 sustainable farming practices. We aim to bridge the gap between conscious consumers 
                 and responsible farmers, ensuring quality and authenticity in every product.
               </p>
@@ -81,7 +81,7 @@ const About = () => {
               
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Our Vision</h3>
               <p className="text-gray-600 text-sm sm:text-base px-2">
-                To become the most trusted name in organic food products, creating a healthier world 
+                To become the most trusted name in traditional food products, creating a healthier world 
                 where organic living is accessible to all. We envision a future where every meal 
                 contributes to personal health and environmental well-being.
               </p>
@@ -133,7 +133,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">📞 Phone:</h3>
-                <p className="text-gray-600">7358260527 | 9489790011</p>
+                <p className="text-gray-600"> 9489790011</p>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">📧 Email:</h3>

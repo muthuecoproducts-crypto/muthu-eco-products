@@ -40,9 +40,9 @@ const Footer = () => {
           {/* Company Info & Links */}
           <div className="space-y-6 sm:space-y-8">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-pink-200 mb-4 sm:mb-6">Muthu Organic Products</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-pink-200 mb-4 sm:mb-6">Muthu Eco Products</h3>
               <p className="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-                Your trusted partner for pure, organic living. We bring you the finest organic food items 
+                Your trusted partner for Traditional living. We bring you the finest traditional, natural and organic grocery items 
                 sourced directly from trusted farms for healthy, sustainable living.
               </p>
             </div>
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm sm:text-base text-center md:text-left">
-              © 2024 Muthu Organic Products. All rights reserved.
+              © 2024 Muthu Eco Products. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400">
               <a href="/privacy-policy" className="hover:text-pink-400 transition-colors">Privacy Policy</a>

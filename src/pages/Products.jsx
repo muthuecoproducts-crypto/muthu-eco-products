@@ -11,7 +11,7 @@ const Products = () => {
 
   const productCategories = [
     {
-      title: "Organic & Natural Rice Varieties",
+      title: "Traditional Rice Varieties",
       description: "Our traditional rice varieties are cultivated using natural farming methods, free from chemicals or polish. Each grain carries the rich heritage and authentic taste of Tamil Nadu.",
       benefits: ["Retains bran and natural nutrients", "Easy to digest and energizing", "Great aroma and authentic texture", "Supports heart and gut health"],
       items: ["Thooyamalli (Boiled/Raw)", "Kitchili Samba (Boiled)", "Seeraga Samba (Boiled/Raw)", "Thanga Samba", "Sivan Samba", "Illupam Poo Samba (Boiled/Raw)", "Maapillai Samba", "Poongar", "Karuppu Kavuni", "Kattuyanam", "Karunguruvai", "Kullakar", "Arubadhamkuruvai", "Brown Rice", "Idli Rice"],
@@ -25,15 +25,15 @@ const Products = () => {
       image: "/images/millets.jpg"
     },
     {
-      title: "Organic Pulses",
-      description: "Our organic pulses are protein-rich, unpolished, and sourced directly from trusted farmers. Perfect for everyday meals, dals, and snacks.",
+      title: "Pulses",
+      description: "Our Natural and Organic pulses are protein-rich, unpolished, and sourced directly from trusted farmers. Perfect for everyday meals, dals, and snacks.",
       benefits: ["High in protein and fiber", "Easy to cook and digest", "Great source of energy and iron", "No artificial polish or chemicals"],
       items: ["Toor Dhal", "Gram Dhal", "White Moong Dhal", "Green Moong Dhal Whole", "White Urad Dhal", "Black Urad Dhal", "Roasted Gram", "Groundnut"],
       image: "/images/Organic-Pulses.png"
     },
     {
-      title: "Organic Flours",
-      description: "Freshly ground from organic grains, our flours retain all essential nutrients and natural flavor. Ideal for wholesome cooking.",
+      title: "Flours",
+      description: "Freshly ground from natural and organic grains, our flours retain all essential nutrients and natural flavor. Ideal for wholesome cooking.",
       benefits: ["Stone-ground and preservative-free", "Rich in nutrients and fiber", "Perfect for traditional recipes", "Longer shelf life when stored properly"],
       items: ["Wheat Flour", "Ragi Flour", "Kambu Flour", "Traditional Mixed Rice Flour"],
       image: "/images/flour.png"
@@ -42,11 +42,11 @@ const Products = () => {
       title: "Natural Sweeteners",
       description: "We bring you unrefined, chemical-free sweeteners that make every dish naturally delicious and healthy.",
       benefits: ["100% natural and minimally processed", "Rich in minerals and antioxidants", "Healthier alternative to refined sugar", "Boosts immunity and energy"],
-      items: ["Naattu Sakkarai", "Jaggery"],
+      items: ["Naattu Sakkarai", "Jaggery","Honey"],
       image: "/images/honey.png"
     },
     {
-      title: "Organic Spices & Powders",
+      title: "Spices & Powders",
       description: "Our handpicked spices are sun-dried and freshly ground to retain their natural oils, aroma, and medicinal properties.",
       benefits: ["Enhances flavor and aroma naturally", "Packed with antioxidants", "Supports digestion and immunity", "Free from additives and colors"],
       items: ["Chilli Long", "Red Chilli Powder", "Mustard", "Pepper", "Coriander Seed", "Fenugreek", "Seeragam (Cumin)", "Sombu (Fennel)", "Cinnamon", "Cardamom", "Clove", "Garam Masala", "Curry Masala", "Sambar Powder", "Idly Powder", "Rasam Powder", "Tamarind"],
@@ -74,7 +74,7 @@ const Products = () => {
       image: "/images/honey.png"
     },
     {
-      title: "Idly Batter & Puttu Mixes",
+      title: "Traditional Rice Idly/Dosa Batter & Puttu Mixes",
       description: "Ready-to-cook, naturally fermented batters and mixes for authentic South Indian meals — pure, soft, and flavorful.",
       benefits: ["Fermented naturally, aids digestion", "Rich in protein and minerals", "Convenient and time-saving", "Made from traditional rice varieties"],
       items: ["Maapillai Samba Idly Batter", "Poongar Idly Batter", "Karunkuruvai Idly Batter", "Poongar Semiya Puttu", "Karuppu Kavuni Puttu Maavu"],
@@ -107,7 +107,7 @@ const Products = () => {
             Products
           </h1>
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 leading-relaxed animate-slide-up px-2 text-gray-700">
-            Every product from Muthu Eco Products is grown naturally and handled with care — ensuring that what reaches your kitchen is fresh, pure, and full of nutrients. Explore our range of 100% organic and natural essentials below.
+            Every product from Muthu Eco Products is grown naturally and handled with care — ensuring that what reaches your kitchen is fresh, pure, and full of nutrients. Explore our range of 100% natural, traditional and organic essentials below.
           </p>
         </div>
       </section>
@@ -262,7 +262,7 @@ const Products = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">📞 Phone</h3>
-                <p className="text-gray-600">7358260527 | 9489790011</p>
+                <p className="text-gray-600">9489790011</p>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">📧 Email</h3>
