@@ -118,7 +118,7 @@ As proud retailers of Traditional, Natural & Organic products, we offer only wha
               </div>
             </div>
             <img 
-              src="/images/home-idli.png" 
+              src="/images/idlii.png" 
               alt="Idly Dosa Batter" 
               className="w-96 h-96 rounded-full object-cover flex-shrink-0 hidden md:block"
             />

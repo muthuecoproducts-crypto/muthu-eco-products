@@ -71,14 +71,14 @@ const Products = () => {
       description: "Traditional homemade-style snacks made from native grains, offering taste, nutrition, and nostalgia in every bite.",
       benefits: ["Rich in protein and calcium", "Great energy boosters", "No artificial flavors or preservatives", "Perfect for kids and adults alike"],
       items: ["Ulundhankali", "Health Mix Laddu", "Moong Dhal Laddu", "Black Urad Dhal Laddu", "Raagi Laddu", "Thinai Laddu"],
-      image: "/images/honey.png"
+      image: "/images/healthy_snacks.png"
     },
     {
       title: "Traditional Rice Idly/Dosa Batter & Puttu Mixes",
       description: "Ready-to-cook, naturally fermented batters and mixes for authentic South Indian meals — pure, soft, and flavorful.",
       benefits: ["Fermented naturally, aids digestion", "Rich in protein and minerals", "Convenient and time-saving", "Made from traditional rice varieties"],
       items: ["Maapillai Samba Idly Batter", "Poongar Idly Batter", "Karunkuruvai Idly Batter", "Poongar Semiya Puttu", "Karuppu Kavuni Puttu Maavu"],
-      image: "/images/dosaa.png"
+      image: "/images/dosa_batter.png"
     }
   ]
 
