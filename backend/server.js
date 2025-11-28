@@ -11,29 +11,20 @@ const PORT = process.env.PORT || 5001;
 // Middleware
 app.use(
   cors({
-    origin: function (origin, callback) {
-      const allowedOrigins = [
-        "http://localhost:5173",
-        "https://muthu-eco-products-nine.vercel.app",
-        "https://muthu-eco-products.vercel.app",
-        "https://backend-dharanmj.vercel.app"
-      ];
-      
-      // Allow requests with no origin (mobile apps, etc.)
-      if (!origin) return callback(null, true);
-      
-      // Check if origin matches allowed patterns
-      if (allowedOrigins.includes(origin) || origin.match(/^https:\/\/muthu-eco-products.*\.vercel\.app$/)) {
-        return callback(null, true);
-      }
-      
-      return callback(new Error('Not allowed by CORS'));
-    },
+    origin: [
+      "http://localhost:5173",
+      "https://muthu-eco-products-nine.vercel.app",
+      "https://muthu-eco-products.vercel.app"
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    optionsSuccessStatus: 200
   })
 );
+
+// Handle preflight requests explicitly
+app.options('*', cors());
 app.use(express.json());
 
 // Health check endpoint
