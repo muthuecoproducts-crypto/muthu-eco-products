@@ -14,7 +14,9 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://muthu-eco-products-nine.vercel.app",
-      "https://muthu-eco-products.vercel.app"
+      "https://muthu-eco-products.vercel.app",
+      "https://muthu-eco-products-*.vercel.app",
+      "https://backend-dharanmj.vercel.app"
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
